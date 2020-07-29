@@ -1,6 +1,6 @@
-export default function audioVizualization(canvas, audio) {
+export default function audioVizualization(canvas, audio, button) {
 
-  const context = new AudioContext();
+  const context = new (window.AudioContext || window.webkitAudioContext)()
   const analyser = context.createAnalyser();
   const ctx = canvas.getContext('2d');
   const source = context.createMediaElementSource(audio);
@@ -27,11 +27,11 @@ export default function audioVizualization(canvas, audio) {
 
   draw();
 
-  // button.addEventListener('click', function() {
-  //   context.resume().then(() => {
-  //     console.log('Playback resumed successfully');
-  //   });
-  // });
+  button.addEventListener('click', function() {
+    context.resume().then(() => {
+      console.log('Playback resumed successfully');
+    });
+  });
 
 
 

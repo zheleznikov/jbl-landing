@@ -16,10 +16,10 @@ const playButton2 = document.querySelector('.track__button_2');
 // audioVizualization(canvas1, audio1);
 // audioVizualization(canvas2, audio2);
 
-// window.onload = function() {
-//   audioVizualization(canvas1, audio1, playButton1);
-//   audioVizualization(canvas2, audio2, playButton2);
-// }
+window.onload = function() {
+  audioVizualization(canvas1, audio1, playButton1);
+  audioVizualization(canvas2, audio2, playButton2);
+}
 
 
 // запуск аудио
@@ -42,12 +42,12 @@ function play2() {
 
 playButton1.addEventListener('click', play1);
 
-playButton1.addEventListener('click', function() {
-  audioVizualization(canvas1, audio1);
-});
+// playButton1.addEventListener('click', function() {
+//   audioVizualization(canvas1, audio1);
+// });
 
 playButton2.addEventListener('click', play2);
 
-playButton2.addEventListener('click', function() {
-  audioVizualization(canvas2, audio2);
-});
+// playButton2.addEventListener('click', function() {
+//   audioVizualization(canvas2, audio2);
+// });
