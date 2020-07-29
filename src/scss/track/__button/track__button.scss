@@ -1,0 +1,18 @@
+.track__button {
+  background-color: #C9EF5D;
+  width: 39px;
+  height: 39px;
+  border-radius: 100%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: transform .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.track__button:active {
+  transform: scale(0.9);
+}

@@ -1,0 +1,16 @@
+.footer {
+  flex-shrink: 0;
+  color: yellowgreen;
+  background: white;
+  // background: url(../images/background.png);
+}
+
+.footer.lazyloaded {
+  background: url(../images/branch.png);
+}
+
+h2,
+p {
+  text-align: center;
+  color: fuchsia;
+}
