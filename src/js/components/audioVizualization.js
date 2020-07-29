@@ -13,15 +13,24 @@ export default function audioVizualization(canvas, audio, button) {
     analyser.getByteFrequencyData(array);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = '#C9EF5D';
-    const count = 150;
 
-    for (let i = 0; i < count; i++) {
+    for (let i = 0; i < 150; i++) {
       let x = i * 2;
-      let height = -(array[i] / 2);
+      let height = -(array[i] / 4);
       let width = 1;
-      ctx.fillRect(x, canvas.height, width, height)
-
+      ctx.fillRect(x, canvas.height - 75, width, height)
     }
+
+    for (let i = 0; i < 150; i++) {
+      let x = i * 2;
+      let height = (array[i] / 4);
+      let width = 1;
+      ctx.fillRect(x, canvas.height - 75, width, height)
+    }
+
+
+
+
     window.requestAnimationFrame(draw);
   }
 
