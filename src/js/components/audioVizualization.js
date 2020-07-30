@@ -16,14 +16,14 @@ export default function audioVizualization(canvas, audio, button) {
 
     for (let i = 0; i < 150; i++) {
       let x = i * 2;
-      let height = -(array[i] / 4);
+      let height = -(array[i] / 5);
       let width = 1;
       ctx.fillRect(x, canvas.height - 75, width, height)
     }
 
     for (let i = 0; i < 150; i++) {
       let x = i * 2;
-      let height = (array[i] / 4);
+      let height = (array[i] / 5);
       let width = 1;
       ctx.fillRect(x, canvas.height - 75, width, height)
     }
