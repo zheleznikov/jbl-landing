@@ -4,7 +4,10 @@ import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import "lazysizes/plugins/unveilhooks/ls.unveilhooks";
 import CircleType from 'circletype';
+import simpleParallax from 'simple-parallax-js';
 import audioVizualization from './js/components/audioVizualization';
+
+
 
 const canvas1 = document.querySelector('.track__canvas_1');
 const canvas2 = document.querySelector('.track__canvas_2');
@@ -13,7 +16,13 @@ const audio2 = document.querySelector('.track__audio_2');
 const playButton1 = document.querySelector('.track__button_1');
 const playButton2 = document.querySelector('.track__button_2');
 
-// new CircleType(document.querySelector('.header__icon-text')).radius(180).fitText();
+new CircleType(document.querySelector('.social__text_1'))
+// .dir(1)
+.radius(70);
+
+new CircleType(document.querySelector('.social__text_2'))
+.dir(-1)
+.radius(70);
 
 
 // audioVizualization(canvas1, audio1);
@@ -55,4 +64,28 @@ function play2() {
 
 // playButton2.addEventListener('click', function() {
 //   audioVizualization(canvas2, audio2);
+// });
+
+
+
+
+// paralax-scrolling
+
+const planets = document.querySelectorAll('.planet');
+console.log(planets)
+
+// new simpleParallax(planets, {
+//   // scale: 2,
+//   delay: 1.6,
+//   transition: 'cubic-bezier(0,0,0,1)',
+//   // maxTransition: 80
+// });
+
+// const rellax = new Rellax('.rellax', {
+//   speed: 2,
+//   // center: false,
+//   // wrapper: null,
+//   // round: true,
+//   // vertical: true,
+//   // horizontal: false
 // });
