@@ -28,12 +28,9 @@ export default function audioVizualization(canvas, audio, button) {
       ctx.fillRect(x, canvas.height - 75, width, height)
     }
 
-
-
-
     window.requestAnimationFrame(draw);
   }
-
+  
   draw();
 
   button.addEventListener('click', function() {
