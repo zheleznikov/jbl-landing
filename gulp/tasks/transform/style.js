@@ -14,12 +14,12 @@ module.exports = () =>
     // $.cached('scssBuild'),
     $.if(isDev, $.sourcemaps.init()),
     $.sass(),
-    modifyUrl({
-      modify: (url) => {
-        const arrUrl = url.split('/');
-        return `./images/${arrUrl[arrUrl.length - 1]}`
-      },
-    }),
+    // modifyUrl({
+    //   modify: (url) => {
+    //     const arrUrl = url.split('/');
+    //     return `./images/${arrUrl[arrUrl.length - 1]}`
+    //   },
+    // }),
     // $.if(isProd, cssBase64({
     //    maxWeightResource: 1000000,
     //   // baseDir: 'build',

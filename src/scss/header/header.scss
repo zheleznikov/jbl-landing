@@ -1,0 +1,23 @@
+@import './__title/header__title.scss';
+@import './__text/header__text.scss';
+@import './__logos/header__logos.scss';
+@import './__container/header__container.scss';
+@import './__content/header__content.scss';
+@import './__planet/header__planet.scss';
+@import './__icon-text/header__icon-text.scss';
+@import './__union/header__union.scss';
+
+.header {
+  // width: 1164px;
+  // border: 1px solid red;
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+
+}
+
+.header.lazyloaded {
+  // background: url(./images/header-bg.png);
+  background-position: right top;
+  background-repeat: repeat-x;
+}

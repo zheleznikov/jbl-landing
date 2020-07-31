@@ -1,7 +1,20 @@
 @import '../node_modules/normalize.css/normalize';
+@import './scss/fonts.scss';
+
+@import './scss/mixins.scss';
+
 @import './scss/page.scss';
 @import './scss/header/header.scss';
+@import './scss/logo/logo.scss';
+@import './scss/social/social.scss';
+
 @import './scss/track/track.scss';
+@import './scss//space/space.scss';
 
-
+body {
+  // background:linear-gradient(180deg, #09081B 0.28%, rgba(9, 8, 27, 0) 88.65%);
+  background: #09081B;
+  // background: linear-gradient(90.03deg, #09081B 0.28%, rgba(9, 8, 27, 0) 88.65%);
+  // background: rgb(9, 8, 27);
+}
 

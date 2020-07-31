@@ -1,0 +1,14 @@
+.logo_jbl {
+  margin-right: 40px;
+  fill: white;
+}
+
+.logo_hype {
+  align-self: flex-end;
+  fill: white;
+}
+
+.logo_jbl:hover, .logo_hype:hover {
+  fill:#c9ef5d;
+  transform: scale(0.98);
+}
