@@ -1,7 +1,14 @@
 .lead__bg {
   position: absolute;
-  left: -730px;
+  top: 0;
+  left: -530px;
   // top: -200px;
   // border: 1px solid red;
   // height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .lead__bg {
+    display: none;
+  }
 }

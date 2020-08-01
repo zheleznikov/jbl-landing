@@ -6,6 +6,8 @@ export default function audioVizualization(canvas, audio, button) {
   const source = context.createMediaElementSource(audio);
   source.connect(analyser);
   analyser.connect(context.destination);
+  canvas.width = 50;
+  canvas.height = 20;
 
 
   function draw() {
@@ -16,16 +18,16 @@ export default function audioVizualization(canvas, audio, button) {
 
     for (let i = 0; i < 150; i++) {
       let x = i * 2;
-      let height = -(array[i] / 5);
-      let width = 1;
-      ctx.fillRect(x, canvas.height - 75, width, height)
+      let height = -(array[i] / 75);
+      let width = 1.5;
+      ctx.fillRect(x, canvas.height - 10, width, height)
     }
 
     for (let i = 0; i < 150; i++) {
       let x = i * 2;
-      let height = (array[i] / 5);
-      let width = 1;
-      ctx.fillRect(x, canvas.height - 75, width, height)
+      let height = (array[i] / 75);
+      let width = 1.5;
+      ctx.fillRect(x, canvas.height - 10, width, height)
     }
 
     window.requestAnimationFrame(draw);

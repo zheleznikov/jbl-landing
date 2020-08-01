@@ -1,9 +1,13 @@
 <section class="lead">
   <div class="lead__content">
-    <img src="../images/lead-bg.png" alt="" class="lead__bg">
+    <!-- <img data-srcset="../images/lead-bg.png" alt="" class="lead__bg lazyload"> -->
+    <picture class="">
+      <source  data-srcset="./images/lead-bg.png">
+      <img class="lead__bg lazyload" data-srcset="./images/lead-bg.png">
+    </picture>
     <div class="lead__img-container">
-      <img class="lead__img lead__img_1" src="../images/lead-headset-front.png" alt="">
-      <img class="lead__img lead__img_2" src="../images/lead-headset-back.png" alt="">
+      <img class="lead__img lead__img_1" src="./images/lead-headset-front.png" alt="">
+      <img class="lead__img lead__img_2" src="./images/lead-headset-back.png" alt="">
     </div>
     <div class="lead__description">
       <p class="lead__text">

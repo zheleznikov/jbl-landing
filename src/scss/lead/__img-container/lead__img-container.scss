@@ -5,3 +5,11 @@
   // border: 1px solid red;
   margin-top: 148px;
 }
+
+@media screen and (max-width: 950px) {
+  .lead__img-container {
+    overflow: hidden;
+    flex-basis: unset;
+    margin-top: 0;
+  }
+}

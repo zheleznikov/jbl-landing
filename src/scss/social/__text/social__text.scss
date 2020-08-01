@@ -1,7 +1,7 @@
 .social__text {
-  @include descriptionText;
+  @include text-description;
   line-height: 120%;
-  border: 1px solid red;
+  // border: 1px solid red;
   width: 100px;
   margin: 0;
   // letter-spacing: 10px

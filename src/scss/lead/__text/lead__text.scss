@@ -10,3 +10,10 @@
   // border: 1px solid red;
   // margin-bottom: 0;
 }
+
+@media screen and (max-width: 950px) {
+  .lead__img-container {
+    font-size: 22px;
+
+  }
+}

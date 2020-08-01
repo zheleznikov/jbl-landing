@@ -1,8 +1,18 @@
-@mixin descriptionText {
+@mixin text-description {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   color: #fff;
+}
+
+@mixin planet-title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 124.5%;
+  color: #fff;
+  text-shadow: 0px 5px 50px rgba(0, 0, 0, 0.65);
 }

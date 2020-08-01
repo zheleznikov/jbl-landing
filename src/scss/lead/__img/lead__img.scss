@@ -12,3 +12,14 @@
   bottom: 0;
   // border: 1px solid red;
 }
+
+@media screen and (max-width: 950px) {
+  .lead__img_2 {
+    right: 65px;
+    bottom: 40px;
+  }
+
+  .lead__img_1 {
+    right: -85px;
+  }
+}
