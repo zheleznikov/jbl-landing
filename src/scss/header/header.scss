@@ -4,20 +4,23 @@
 @import './__container/header__container.scss';
 @import './__content/header__content.scss';
 @import './__planet/header__planet.scss';
-@import './__icon-text/header__icon-text.scss';
-@import './__union/header__union.scss';
+@import './__bg/header__bg.scss';
+@import './__description/header__description.scss';
+@import './__img-container/header__img-container.scss';
+@import './__img/header__img.scss';
 
 .header {
   // width: 1164px;
-  // border: 1px solid red;
   width: 100%;
   margin: 0 auto;
   overflow-x: hidden;
+  padding-bottom: 50px; // для наглядности
 
 }
 
 .header.lazyloaded {
   // background: url(./images/header-bg.png);
   background-position: right top;
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
+  
 }

@@ -3,3 +3,11 @@
   max-width: 469px;
 
 }
+
+@media screen and (max-width: 950px) {
+  .header__text {
+    text-align: center;
+    // font-size: 55px;
+    // max-width: 400px;
+  }
+}

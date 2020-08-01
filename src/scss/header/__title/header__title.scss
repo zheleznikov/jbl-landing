@@ -9,4 +9,13 @@
   max-width: 620px;
   // border: 1px solid red;
   margin-bottom: 20px;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 950px) {
+  .header__title {
+    text-align: center;
+    font-size: 55px;
+    max-width: 450px;
+  }
 }

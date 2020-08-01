@@ -1,0 +1,10 @@
+.header__description {
+  flex-basis: 620px;
+  border: 1px solid red;
+}
+
+@media screen and (max-width: 950px) {
+  .header__description {
+    flex-basis: unset;
+  }
+}

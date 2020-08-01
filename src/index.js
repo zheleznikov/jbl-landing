@@ -3,7 +3,7 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext;
 import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import "lazysizes/plugins/unveilhooks/ls.unveilhooks";
-import CircleType from 'circletype';
+// import CircleType from 'circletype';
 import simpleParallax from 'simple-parallax-js';
 import audioVizualization from './js/components/audioVizualization';
 
@@ -16,13 +16,7 @@ const audio2 = document.querySelector('.track__audio_2');
 const playButton1 = document.querySelector('.track__button_1');
 const playButton2 = document.querySelector('.track__button_2');
 
-new CircleType(document.querySelector('.social__text_1'))
-// .dir(1)
-.radius(70);
 
-new CircleType(document.querySelector('.social__text_2'))
-.dir(-1)
-.radius(70);
 
 
 // audioVizualization(canvas1, audio1);

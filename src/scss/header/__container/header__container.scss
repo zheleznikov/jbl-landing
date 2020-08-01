@@ -1,6 +1,21 @@
 .header__container {
   display: flex;
   justify-content: space-between;
-  width: 1164px;
+  max-width: 1164px;
   margin: 0 auto 32px;
+//  border: 1px solid white;
+}
+
+@media screen and (max-width: 1220px) {
+  .header__container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .header__container {
+    // border: 1px solid white;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
