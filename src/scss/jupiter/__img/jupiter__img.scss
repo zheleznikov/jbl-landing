@@ -1,0 +1,17 @@
+.jupiter__img {
+  position: absolute;
+  right: -100px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1220px) {
+  .jupiter__img {
+    right: -400px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .jupiter__img {
+    right: 0;
+  }
+}

@@ -1,3 +1,12 @@
 .jupiter__container {
   display: flex;
+  // max-width: $block-width;
+  // border: 1px solid red;
+
+}
+
+@media screen and (max-width: 950px) {
+  .jupiter__container {
+    flex-direction: column;
+  }
 }

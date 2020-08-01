@@ -9,3 +9,9 @@
   // margin-top: 148px;
   margin-bottom: 200px;
 }
+
+@media screen and (max-width: 950px) {
+  .lead {
+    margin-bottom: 50px;
+  }
+}

@@ -1,5 +1,13 @@
 .jupiter__content {
   max-width: $block-width;
-  // border: 1px solid red;
   margin: 0 auto;
+  // border: 1px solid red;
+
+  // overflow-y: hidden;
+}
+
+@media screen and (max-width: 1436px) {
+  .jupiter__content {
+    width: 90%;
+  }
 }

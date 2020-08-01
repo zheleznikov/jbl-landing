@@ -1,19 +1,27 @@
 <section class="jupiter">
+  <picture>
+    <source data-srcset="./images/jupiter-768.png" media="(max-width:950px)">
+    <source data-srcset="./images/jupiter.png">
+      <img data-srcset="./images/jupiter.png" alt="" class="jupiter__img lazyload">
+  </picture>
+
   <div class="jupiter__content">
-    <h2 class="planet__title jupiter__title">Рев Юпитера</h2>
-    <div class="jupiter__container">
-      <div class="jupiter__par">
-        <p class=" planet__text jupiter__text">
-          4 июля 2016 года космический аппарат «Юнона» записал звуки «рева», которые возникают на месте столкновения солнечного ветра с магнитосферой Юпитера. Поток ионизированных частиц летел в магнитосферу со скоростью в несколько миллионов км/ч, а потом резко замедлялся, издавая пугающие звуки.
-        </p>
-      </div>
-      <div class="jupiter__par">
-        <p class="planet__text jupiter__text">
-          Магнитосфера Юпитера — самая большая структура в Солнечной системе. Как говорят сами специалисты миссии: «Если бы магнитосфера светилась в видимом спектре, то с Земли она выглядела бы как объект на небе, который визуально в два раза больше Луны». 
-        </p>
-        @@include('./jupiterAudio.html')
-      </div>
-    </div> 
+      <h2 class="planet__title jupiter__title">Рев Юпитера</h2>
+      <div class="jupiter__container">
+        <div class="jupiter__par">
+          <p class=" planet__text jupiter__text">
+            4 июля 2016 года космический аппарат «Юнона» записал звуки «рева», которые возникают на месте столкновения солнечного ветра с магнитосферой Юпитера. Поток ионизированных частиц летел в магнитосферу со скоростью в несколько миллионов км/ч, а потом резко замедлялся, издавая пугающие звуки.
+          </p>
+        </div>
+        <div class="jupiter__par">
+          <p class="planet__text jupiter__text">
+            Магнитосфера Юпитера — самая большая структура в Солнечной системе. Как говорят сами специалисты миссии: «Если бы магнитосфера светилась в видимом спектре, то с Земли она выглядела бы как объект на небе, который визуально в два раза больше Луны». 
+          </p>
+          @@include('./jupiterAudio.html')
+        </div>
+      </div> 
+    
+
 
   </div>
   
