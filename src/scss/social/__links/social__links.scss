@@ -14,10 +14,13 @@
     margin-right: 12px;
 
   }
-
   
+}
 
 
-
-  
+@media screen and (max-width: 950px) {
+  .social__links {
+    align-self: center;
+    margin-bottom: 50px;
+  }
 }

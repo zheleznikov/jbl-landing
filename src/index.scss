@@ -2,6 +2,7 @@
 @import './scss/fonts.scss';
 
 @import './scss/mixins.scss';
+@import './scss/variables.scss';
 
 @import './scss/page.scss';
 @import './scss/header/header.scss';
@@ -9,7 +10,9 @@
 @import './scss/social/social.scss';
 
 @import './scss/track/track.scss';
-@import './scss/space/space.scss';
+@import './scss/space/space.scss'; // может быть не пригодится
+@import './scss/lead/lead.scss';
+
 
 body {
   // background:linear-gradient(180deg, #09081B 0.28%, rgba(9, 8, 27, 0) 88.65%);
@@ -19,7 +22,5 @@ body {
   // background: rgb(9, 8, 27);
 };
 
-.planet {
-  // position: static
-}
+
 

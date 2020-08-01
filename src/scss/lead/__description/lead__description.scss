@@ -1,0 +1,12 @@
+.lead__description {
+  align-self: flex-end;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 950px) {
+  .lead__description {
+    // max-width: 388px;
+    margin-left: 0;
+    align-self: center;
+  }
+}

@@ -12,3 +12,9 @@
   left: 0;
   bottom: -220px;
 }
+
+@media screen and (max-width: 768px) {
+  .header__planet_1 {
+    top: 20px;
+  }
+}

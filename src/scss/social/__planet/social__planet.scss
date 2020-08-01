@@ -1,4 +1,23 @@
 .social__planet {
   position: absolute;
+  left: -80px;
+}
 
+@media screen and (max-width: 950px) {
+  .social__planet {
+    top: 0;
+    left:0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .social__planet {
+    top: 50px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .social__planet {
+    left: -100px;
+  }
 }

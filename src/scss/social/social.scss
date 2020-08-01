@@ -17,3 +17,9 @@
   }
 
 }
+
+@media screen and (max-width: 950px) {
+  .social {
+    flex-direction: column-reverse;
+  }
+}
