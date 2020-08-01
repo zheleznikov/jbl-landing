@@ -1,0 +1,17 @@
+.saturn__img {
+  position: absolute;
+  left: -200px;
+}
+
+@media screen and (max-width: 1160px) {
+  .saturn__img {
+    left: -400px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .saturn__img {
+    left: 0;
+    top: -160px;
+  }
+}

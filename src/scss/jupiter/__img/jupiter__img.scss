@@ -12,6 +12,7 @@
 
 @media screen and (max-width: 950px) {
   .jupiter__img {
-    right: 0;
+    right: calc(50% - 170px);
+    top: 420px;
   }
 }

@@ -1,3 +1,15 @@
 .jupiter__title {
   margin-top: 100px;
 }
+
+@media screen and (max-width: 950px) {
+  .jupiter__title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .jupiter__title {
+    text-align: left;
+  }
+}

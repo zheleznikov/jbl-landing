@@ -1,0 +1,19 @@
+.saturn__container {
+  max-width: $block-width;
+  margin: 0 auto;
+
+  display: flex;
+}
+
+@media screen and (max-width: $block-width) {
+  .saturn__container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .saturn__container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}

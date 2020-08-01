@@ -1,0 +1,12 @@
+.saturn__img-container {
+  position: relative;
+  flex-basis: 400px;
+  z-index: -1;
+  // border: 1px solid red;
+}
+
+@media screen and (max-width: 950px) {
+  .saturn__img-container {
+    flex-basis: 300;
+  }
+}

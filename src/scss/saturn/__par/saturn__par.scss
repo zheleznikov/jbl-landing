@@ -1,0 +1,10 @@
+.saturn__par {
+  flex-basis: 590px;
+}
+
+@media screen and (max-width: 950px) {
+  .saturn__par {
+    flex-basis: unset;
+    max-width: 394px;
+  }
+}

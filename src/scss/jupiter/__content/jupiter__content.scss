@@ -11,3 +11,9 @@
     width: 90%;
   }
 }
+
+@media screen and (max-width: 420px) {
+  .jupiter__content {
+    width: 100%;
+  }
+}

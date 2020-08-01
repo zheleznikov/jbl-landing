@@ -10,7 +10,7 @@
   margin: 0 auto;
   position: relative;
   height: 565px;
-  // overflow-y: hidden;
+  // margin-bottom: 40px;
 }
 
 @media screen and (max-width: 1436px) {
@@ -20,8 +20,8 @@
   }
 }
 
-// @media screen and (max-width: 950px) {
-//   .jupiter {
-//     height: 700px;
-//   }
-// }
+@media screen and (max-width: 950px) {
+  .jupiter {
+    height: unset;
+  }
+}
