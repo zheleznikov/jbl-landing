@@ -9,10 +9,11 @@
   max-width: 778px;
   // border: 1px solid red;
   // margin-bottom: 0;
+  margin: 0;
 }
 
 @media screen and (max-width: 950px) {
-  .lead__img-container {
+  .lead__text {
     font-size: 22px;
 
   }

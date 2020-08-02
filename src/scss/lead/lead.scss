@@ -4,10 +4,12 @@
 @import './__text/lead__text.scss';
 @import './__img/lead__img.scss';
 @import './__bg/lead__bg.scss';
+@import './__layer/lead__layer.scss';
 
 .lead {
   // margin-top: 148px;
   margin-bottom: 200px;
+  // border: 1px solid red;
 }
 
 @media screen and (max-width: 950px) {

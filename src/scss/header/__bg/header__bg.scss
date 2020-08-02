@@ -1,25 +1,27 @@
 .header__bg {
   position: absolute;
   top: 0;
-  left: 100px;
-  z-index: -1;
+  left: 5%;
+  z-index: -3;
+  opacity: .5;
 }
 
 @media screen and (max-width: 1220px) {
   .header__bg {
-    // left: -100px;
+    left: -200px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .header__bg {
+    left: -500px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .header__bg {
-    // left:-10%;
-    // left: -5%;
+    left: 0;
     // border: 1px solid red;
-    
-    // object-position: cover;
-    // width: 100%;
-    // left:0;
+    // display: none;
   }
 }
-

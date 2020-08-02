@@ -4,9 +4,21 @@
   left:0;
   width: 100%;
   height: 318px;
-  background: linear-gradient(180deg, #09081B 0.28%, rgba(9, 8, 27, 0) 88.65%);
   background: linear-gradient(180deg, rgba(9, 8, 27, 0) 0.28%, #09081B 88.65%);
   // transform: rotate(-90deg);
   z-index: -1;
   // border: 1px solid green;
+}
+
+@media screen and (max-width: 950px) {
+  .social__layer {
+    bottom: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .social__layer {
+    display: none;
+
+  }
 }

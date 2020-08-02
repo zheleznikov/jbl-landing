@@ -13,6 +13,12 @@
 
 }
 
+@media screen and (max-width: 1220px) {
+  .social__content {
+   width: 90%;
+  }
+}
+
 @media screen and (max-width: 950px) {
   .social__content {
     flex-direction: column-reverse;
