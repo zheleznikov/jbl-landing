@@ -19,6 +19,16 @@
   // margin-bottom: 40px;
 }
 
+
+.jupiter:hover .lead__layer_stars {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.jupiter:hover .jupiter__img {
+  transform: scale(.8);
+}
+
 @media screen and (max-width: 950px) {
   .jupiter {
     overflow: hidden;

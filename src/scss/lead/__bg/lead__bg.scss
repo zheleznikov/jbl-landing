@@ -7,7 +7,10 @@
   // top: -200px;
   // border: 1px solid red;
   // height: 100%;
+  transition: all 100s;
 }
+
+
 
 @media screen and (max-width: 950px) {
   .lead__bg {

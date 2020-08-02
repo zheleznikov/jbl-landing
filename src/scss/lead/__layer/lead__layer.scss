@@ -5,8 +5,62 @@
   // border: 1px solid red;
 }
 
+.lead__layer_1  {
+  display: none;
+}
+
+.lead__layer_stars {
+  // display: block;
+  width: 384px;
+  height: 440px;
+  position: absolute;
+  background: url(./images/lead-bg-stars.png);
+  // border: 1px solid red;
+  bottom: -400px;
+  left: 60%;
+  z-index: 4;
+  transition: all 20s;
+  opacity: .5;
+}
+
+// .lead__layer_stars:hover {
+//   opacity: 1;
+//   transform: scale(1.2);
+// }
+
 @media screen and (max-width: 950px) {
   .lead__layer {
     position: absolute;
+  }
+
+  .lead__layer_2 {
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    //  border: 1px solid red;
+    background: linear-gradient(180deg, #09081B 0.28%, rgba(9, 8, 27, 0) 88.65%);
+    z-index: 1;
+  }
+
+  .lead__layer_stars {
+    // display: block;
+    width: 384px;
+    height: 440px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    // opacity: .9;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .lead__layer_stars {
+    opacity: .9;
   }
 }

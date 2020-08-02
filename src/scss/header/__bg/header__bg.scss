@@ -4,7 +4,11 @@
   left: 5%;
   z-index: -3;
   opacity: .5;
+  transition: all 90s;
+  // transform: scale(1.2);
 }
+
+
 
 @media screen and (max-width: 1220px) {
   .header__bg {

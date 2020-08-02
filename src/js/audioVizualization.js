@@ -39,11 +39,11 @@ export default function audioVizualization(planet) {
 
   button.addEventListener('click', draw)
 
-  // button.addEventListener('click', function() {
-  //   context.resume().then(() => {
-  //     console.log('Playback resumed successfully');
-  //   });
-  // });
+  button.addEventListener('click', function() {
+    context.resume().then(() => {
+      console.log('Playback resumed successfully');
+    });
+  });
 
 }
 
