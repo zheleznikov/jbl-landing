@@ -1,5 +1,7 @@
-export default function audioVizualization(canvas, audio, button) {
-
+export default function audioVizualization(planet) {
+  const canvas = planet.querySelector('.track__canvas');
+  const audio = planet.querySelector('.track__audio');
+  const button = planet.querySelector('.track__button');
   const context = new (window.AudioContext || window.webkitAudioContext)()
   const analyser = context.createAnalyser();
   const ctx = canvas.getContext('2d');
@@ -41,9 +43,9 @@ export default function audioVizualization(canvas, audio, button) {
     });
   });
 
-
-
 }
+
+
 
 
 
