@@ -4,3 +4,9 @@
   background: linear-gradient(180deg, #09081B 0.28%, rgba(9, 8, 27, 0) 88.65%);
   // border: 1px solid red;
 }
+
+@media screen and (max-width: 950px) {
+  .lead__layer {
+    position: absolute;
+  }
+}

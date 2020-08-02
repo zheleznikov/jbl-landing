@@ -10,10 +10,12 @@
   // margin-top: 148px;
   margin-bottom: 200px;
   // border: 1px solid red;
+  position: relative;
 }
 
 @media screen and (max-width: 950px) {
   .lead {
     margin-bottom: 0px;
+    overflow: hidden;
   }
 }
