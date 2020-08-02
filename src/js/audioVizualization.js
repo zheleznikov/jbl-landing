@@ -35,13 +35,15 @@ export default function audioVizualization(planet) {
     window.requestAnimationFrame(draw);
   }
   
-  draw();
+  // draw();
 
-  button.addEventListener('click', function() {
-    context.resume().then(() => {
-      console.log('Playback resumed successfully');
-    });
-  });
+  button.addEventListener('click', draw)
+
+  // button.addEventListener('click', function() {
+  //   context.resume().then(() => {
+  //     console.log('Playback resumed successfully');
+  //   });
+  // });
 
 }
 

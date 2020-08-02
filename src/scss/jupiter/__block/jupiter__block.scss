@@ -1,0 +1,21 @@
+.jupiter__block {
+  max-width: 1436px;
+  // border: 1px solid red;
+  margin: 0 auto;
+  position: relative;
+  height: 565px;
+}
+
+@media screen and (max-width: 1436px) {
+  .jupiter__block {
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .jupiter__block {
+    height: unset;
+    margin-top: 200px;
+  }
+}

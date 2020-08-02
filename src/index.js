@@ -12,13 +12,15 @@ const jupiter = document.querySelector('.jupiter');
 const saturn = document.querySelector('.saturn');
 
 new PlaySpaceSound(jupiter);
-new PlaySpaceSound(saturn);
+// new PlaySpaceSound(saturn);
 
 
 window.onload = function() {
   audioVizualization(jupiter);
-  audioVizualization(saturn);
+  // audioVizualization(saturn);
 }
+
+
 
 
 

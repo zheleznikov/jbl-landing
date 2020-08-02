@@ -5,27 +5,24 @@
 @import './__title/jupiter__title.scss';
 @import './__img/jupiter__img.scss';
 @import './__bg/jupiter__bg.scss';
+@import './__block/jupiter__block.scss';
 
 // $jupiter-width: 1436px;
 
 .jupiter {
-  max-width: 1436px;
-  border: 1px solid red;
+  width: 100%;
+  // max-width: 1436px;
+  // border: 1px solid red;
   margin: 0 auto;
   position: relative;
-  height: 565px;
+  // overflow: hidden;
   // margin-bottom: 40px;
-}
-
-@media screen and (max-width: 1436px) {
-  .jupiter {
-    overflow: hidden;
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 950px) {
   .jupiter {
-    height: unset;
+    overflow: hidden;
+    margin-top: -200px;
   }
 }
+
