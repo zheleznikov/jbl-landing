@@ -1,0 +1,12 @@
+.saturn__background {
+  margin: 0 auto;
+  width: 1436px;
+  position: relative;
+  // border: 1px solid green;
+}
+
+@media screen and (max-width: 950px) {
+  .saturn__background {
+    display: none;
+  }
+}

@@ -10,14 +10,17 @@ import PlaySpaceSound from './js/PlaySpaceSound';
 
 const jupiter = document.querySelector('.jupiter');
 const saturn = document.querySelector('.saturn');
+const mars = document.querySelector('.mars');
 
 new PlaySpaceSound(jupiter);
-// new PlaySpaceSound(saturn);
+new PlaySpaceSound(saturn);
+new PlaySpaceSound(mars);
 
 
 window.onload = function() {
-  audioVizualization(jupiter);
+  // audioVizualization(jupiter);
   // audioVizualization(saturn);
+  // audioVizualization(mars);
 }
 
 
@@ -27,7 +30,7 @@ window.onload = function() {
 // paralax-scrolling
 
 const planets = document.querySelectorAll('.planet');
-console.log(planets)
+// console.log(planets)
 
 new simpleParallax(planets, {
   // scale: 2,

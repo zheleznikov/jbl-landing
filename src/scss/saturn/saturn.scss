@@ -5,3 +5,16 @@
 @import './__text/saturn__text.scss';
 @import './__title/saturn__title.scss';
 @import './__container/saturn__container.scss';
+@import './__bg/saturn__bg.scss';
+@import './__background/saturn__background.scss';
+@import './__layer/saturn__layer.scss';
+
+
+.saturn {
+  // border: 1px solid red;
+  position: relative;
+  width: 100%;
+  // overflow: hidden;
+
+  // padding-bottom: 300px;
+}
