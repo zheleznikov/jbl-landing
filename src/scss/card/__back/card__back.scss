@@ -1,0 +1,9 @@
+.card__back {
+  transform: rotateY(180deg);
+  overflow: hidden;
+}
+
+.card__back_rotate {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}

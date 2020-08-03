@@ -7,6 +7,7 @@ import simpleParallax from 'simple-parallax-js';
 
 import audioVizualization from './js/audioVizualization';
 import PlaySpaceSound from './js/PlaySpaceSound';
+import RotateCard from './js/RotateCard';
 
 const jupiter = document.querySelector('.jupiter');
 const saturn = document.querySelector('.saturn');
@@ -47,3 +48,13 @@ new simpleParallax(planets, {
 //   // vertical: true,
 //   // horizontal: false
 // });
+
+
+// rotate
+
+const cards = document.querySelectorAll('.card');
+console.log(cards);
+
+cards.forEach(card => new RotateCard(card))
+
+// new RotateCard(cards);

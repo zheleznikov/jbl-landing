@@ -1,10 +1,18 @@
+@import "./__back/card__back.scss";
+@import "./__front/card__front.scss";
+@import "./__front-and-back/card__front-and-back.scss";
+@import "./__bg/card__bg.scss";
+
 .card {
   // width: 405px;
   // height: 201px;
   // box-sizing: border-box;
-  background-color: #b768cc;
+  // background-color: #b768cc;
   border-radius: 6px;
-  // border: 1px solid #b768cc;
+  position: relative;
+  transition: all 0.1s linear;
+  perspective: 1000px;
+
 }
 
 .card_main {

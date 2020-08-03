@@ -1,0 +1,16 @@
+.card__bg {
+  position: absolute;
+  z-index:1;
+  // border: 1px solid white;
+  width: 120%;
+  height: 120%;
+  top: -32px;
+  left: -32px;
+  object-fit: cover;
+}
+
+.card__bg_hor {
+  width: 110%;
+  height: 140%;
+  left: 0;
+}
