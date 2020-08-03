@@ -1,9 +1,13 @@
 <section class="ganymede">
   <div class="ganymede__block">
     <picture>
-      <!-- <img src="" alt="" class="ganymede__bg"> -->
-      <img src="./images/ganymede.png" alt="" class="ganymede__img">
+
+      <source data-srcset="./images/ganymede-768.png" media="(max-width: 768px)">
+      <source data-srcset="./images/ganymede.png">
+      <img data-srcset="./images/ganymede.png" alt="" class="ganymede__img lazyload">
     </picture>
+
+
 
     <img src="./images/planets-smooth-bg.png" alt="" class="ganymede__bg">
     <div class="ganymede__layer_stars"></div>
