@@ -9,3 +9,15 @@
 .ganymede {
   margin-bottom: 300px;
 }
+
+@media screen and (max-width: 950px) {
+  .ganymede {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .ganymede {
+    margin-bottom: 20px;
+  }
+}

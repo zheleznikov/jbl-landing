@@ -1,0 +1,34 @@
+.advantages__container {
+  max-width: $block-width;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-areas:
+    "main second third"
+    "main fourth fifth";
+  grid-template-columns: 295px 1fr 1fr;
+  grid-template-rows: 201px 201px;
+  grid-gap: 32px;
+}
+
+@media screen and (max-width: 1440px) {
+  .advantages__container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .advantages__container {
+    grid-template-areas:
+    "main"
+    "second"
+    "third"
+    "fourth"
+    "fifth";
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 201px 201px 201px 201px 201px;
+    grid-gap: 32px;
+  }
+
+}

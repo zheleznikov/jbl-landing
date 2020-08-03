@@ -1,0 +1,11 @@
+.comet__content {
+  width: $block-width;
+  margin: 0 auto;
+  // border: 1px solid red;
+}
+
+@media screen and (max-width: 1436px) {
+  .comet__content {
+    width: 90%;
+  }
+}

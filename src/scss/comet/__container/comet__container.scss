@@ -1,0 +1,9 @@
+.comet__container {
+  display: flex;
+}
+
+@media screen and (max-width: 950px) {
+  .comet__container {
+    flex-direction: column;
+  }
+}

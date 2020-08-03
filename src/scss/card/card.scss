@@ -1,0 +1,49 @@
+.card {
+  // width: 405px;
+  // height: 201px;
+  // box-sizing: border-box;
+  background-color: #b768cc;
+  border-radius: 6px;
+  // border: 1px solid #b768cc;
+}
+
+.card_main {
+  grid-area: main;
+  // background: #b768cc url(./images/card-main-bg-1.png);
+  width: 295px;
+  height: 435px;
+  background-position: center;
+  // background-repeat: repeat;
+}
+
+.card_main.lazyloaded {
+  // background: #b768cc url(./images/card-main-bg-1.png);
+  // background-position: center;
+  // background-size: auto;
+}
+
+.card_second {
+  grid-area: second;
+}
+
+// .card_second.lazyloaded {
+//   background: #b768cc url(../../images/card-second-bg.png);
+//   background-position: center;
+// }
+
+.card_third {
+  grid-area: third;
+}
+
+// .card_third.lazyloaded {
+//   background: #b768cc url(../../images/card-third-bg.png);
+//   background-position: center;
+// }
+
+.card_fourth {
+  grid-area: fourth;
+}
+
+.card_fifth {
+  grid-area: fifth;
+}

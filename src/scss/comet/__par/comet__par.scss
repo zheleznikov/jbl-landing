@@ -1,0 +1,23 @@
+.comet__par {
+  max-width: 370px;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 950px) {
+  .comet__par {
+    max-width: 394px;
+    margin-right: 0px;
+
+  }
+
+  .comet__par:last-of-type {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .comet__par:first-of-type {
+    margin-bottom: 250px;
+  }
+}

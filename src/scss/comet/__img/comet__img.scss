@@ -1,0 +1,20 @@
+.comet__img {
+  position: absolute;
+  right: 0;
+  bottom: -350px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 950px) {
+  .comet__img {
+    right: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .comet__img {
+    right: 760px;
+    bottom: -750px;
+  }
+}
+
