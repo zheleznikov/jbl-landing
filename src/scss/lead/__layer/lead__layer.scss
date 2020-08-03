@@ -10,17 +10,16 @@
 }
 
 .lead__layer_stars {
-  // display: block;
   width: 384px;
   height: 440px;
   position: absolute;
   background: url(./images/lead-bg-stars.png);
-  // border: 1px solid red;
   bottom: -400px;
-  left: 60%;
+  left: 55%;
   z-index: 4;
   transition: all 20s;
   opacity: .5;
+  // border: 1px solid red;
 }
 
 // .lead__layer_stars:hover {

@@ -3,18 +3,19 @@
   right: -100px;
   z-index: -1;
   // border: 1px solid green;
-  transition: all 50s;
+  // transition: all 50s;
 }
 
 @media screen and (max-width: 1220px) {
   .jupiter__img {
-    right: -400px;
+    // right: -400px;
   }
 }
 
 @media screen and (max-width: 950px) {
   .jupiter__img {
-    right: 50%;
+    // right: 50%;
+    left: 5%;
     top: 320px;
   }
 }

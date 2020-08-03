@@ -8,10 +8,25 @@
     margin-right: 0;
     max-width: 394px;
     margin-right: 0px;
+    
 
   }
 
   .jupiter__par:first-of-type {
     margin-bottom: 400px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+
+  .jupiter__par:first-of-type {
+    margin-bottom: 350px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+
+  .jupiter__par:first-of-type {
+    margin-bottom: 300px;
   }
 }
