@@ -18,9 +18,9 @@ new PlaySpaceSound(mars);
 
 
 window.onload = function() {
-  // audioVizualization(jupiter);
-  // audioVizualization(saturn);
-  // audioVizualization(mars);
+  audioVizualization(jupiter);
+  audioVizualization(saturn);
+  audioVizualization(mars);
 }
 
 

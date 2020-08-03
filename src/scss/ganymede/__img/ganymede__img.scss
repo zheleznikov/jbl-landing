@@ -1,0 +1,12 @@
+.ganymede__img {
+  position: absolute;
+  top: 90px;
+  right: 230px;
+}
+
+@media screen and (max-width: 950px) {
+  .ganymede__img {
+    top: -300px;
+    left: -30px;
+  }
+}

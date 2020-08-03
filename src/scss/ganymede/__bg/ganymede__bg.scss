@@ -1,0 +1,20 @@
+.ganymede__bg {
+  position: absolute;
+  z-index: -2;
+  // border: 1px solid red;
+  left: -1200px;
+  top:-100px;
+  transform: rotate(170deg);
+  opacity: .7;
+
+}
+
+
+@media screen and (max-width: 950px) {
+  .ganymede__bg {
+    left: -1000px;
+    top: -400px;
+    opacity: .9;
+
+  }
+}

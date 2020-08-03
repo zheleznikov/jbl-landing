@@ -1,0 +1,9 @@
+.ganymede__par {
+  max-width: 640px;
+}
+
+@media screen and (max-width: 950px) {
+  .ganymede__par {
+    max-width: 394px;
+  }
+}

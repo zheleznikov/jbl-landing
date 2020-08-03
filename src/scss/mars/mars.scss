@@ -3,7 +3,25 @@
 @import './__par/mars__par.scss';
 @import './__text/mars__text.scss';
 @import './__title/mars__title.scss';
+@import './__block/mars__block.scss';
+@import './__img/mars__img.scss';
 
 .mars {
   margin-top: 100px;
+  margin-bottom: 300px;
+
+  // margin-bottom: 500px;
+}
+
+@media screen and (max-width: 1220px) {
+  .mars {
+    margin-bottom: 100px;
+  }
+}
+
+
+@media screen and (max-width: 950px) {
+  .mars {
+    margin-bottom: 500px;
+  }
 }

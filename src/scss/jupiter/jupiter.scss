@@ -1,33 +1,21 @@
-@import './__container/jupiter__container.scss';
-@import './__content/jupiter__content.scss';
-@import './__par/jupiter__par.scss';
-@import './__text/jupiter__text.scss';
-@import './__title/jupiter__title.scss';
-@import './__img/jupiter__img.scss';
-@import './__bg/jupiter__bg.scss';
-@import './__block/jupiter__block.scss';
-@import './__layer/jupiter__layer.scss';
+@import "./__container/jupiter__container.scss";
+@import "./__content/jupiter__content.scss";
+@import "./__par/jupiter__par.scss";
+@import "./__text/jupiter__text.scss";
+@import "./__title/jupiter__title.scss";
+@import "./__img/jupiter__img.scss";
+@import "./__bg/jupiter__bg.scss";
+@import "./__block/jupiter__block.scss";
+@import "./__layer/jupiter__layer.scss";
 
-// $jupiter-width: 1436px;
 
 .jupiter {
-
   width: 100%;
-  // max-width: 1436px;
-  // border: 1px solid white;
+
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
-
-  // overflow: hidden;
-  // margin-bottom: 40px;
+  margin-bottom: 200px;
 }
-
-@media screen and (min-width: 1650px) {
-  .jupiter {
-  }
-}
-
 
 .jupiter:hover .lead__layer_stars {
   opacity: 1;
@@ -42,6 +30,7 @@
   .jupiter {
     overflow: hidden;
     margin-top: -200px;
+    margin-bottom: 0;
+
   }
 }
-
