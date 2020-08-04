@@ -1,7 +1,6 @@
 .advantages__container {
   max-width: $block-width;
   margin: 0 auto;
-
   display: grid;
   grid-template-areas:
     "main second third"
@@ -21,18 +20,17 @@
 @media screen and (max-width: 950px) {
   .advantages__container {
     grid-template-areas:
-    "main"
-    "second"
-    "third"
-    "fourth"
-    "fifth";
+      "main"
+      "second"
+      "third"
+      "fourth"
+      "fifth";
 
     grid-template-columns: 450px;
     justify-content: center;
     grid-template-rows: 201px 201px 201px 201px 201px;
     grid-gap: 16px;
   }
-
 }
 
 @media screen and (max-width: 450px) {

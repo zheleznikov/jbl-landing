@@ -1,6 +1,5 @@
 .advantages__img {
   position: absolute;
-  // z-index: 1;
 }
 
 .advantages__img_right {
@@ -9,21 +8,17 @@
 }
 
 .advantages__img_left {
-  left:  -100px;
+  left: -100px;
   bottom: -100px;
 }
 
 @media screen and (max-width: 950px) {
-
-
   .advantages__img_right {
-    // right: 50px;
     right: -80px;
     top: -250px;
   }
   .advantages__img_left {
     left: 60%;
     top: -120px;
-    
   }
 }
