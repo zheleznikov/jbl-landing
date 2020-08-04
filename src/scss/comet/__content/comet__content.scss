@@ -9,3 +9,15 @@
     width: 90%;
   }
 }
+
+@media screen and (max-width: 950px) {
+  .comet__content {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .comet__content {
+    width: 90%;
+  }
+}
