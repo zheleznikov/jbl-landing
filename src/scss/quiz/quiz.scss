@@ -1,0 +1,35 @@
+@import "./__button/quiz__button.scss";
+@import "./__content/quiz__content.scss";
+@import "./__icon/quiz__icon.scss";
+@import "./__text/quiz__text.scss";
+@import "./__title/quiz__title.scss";
+
+.quiz {
+  max-width: $block-width;
+  margin: 0 auto;
+  background: #30303c;
+  border-radius: 10px;
+  padding-top: 84px;
+  padding-bottom: 64px;
+  margin-bottom: 130px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1436px) {
+  .quiz {
+    width:90%;
+  }
+}
+
+
+@media screen and (max-width: 950px) {
+  .quiz {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .quiz {
+    width:98%;
+  }
+}

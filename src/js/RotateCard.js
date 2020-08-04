@@ -5,7 +5,6 @@ export default class RotateCard {
     this.back = this.card.querySelector('.card__back');
     this.handle();
     this.handleRotate();
-    // console.log(window.innerWidth);
   }
 
   rotateCard() {
@@ -23,8 +22,6 @@ export default class RotateCard {
     this.front.classList.remove('card__front_rotate');
   }
 
-
-
   handleRotate() {
     if (window.innerWidth < 769) {
       this.card.addEventListener('click', this.rotateCard.bind(this));
@@ -37,5 +34,4 @@ export default class RotateCard {
   handle() {
     window.addEventListener('resize', this.handleRotate.bind(this));
   }
-
 }
