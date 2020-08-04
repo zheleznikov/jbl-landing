@@ -14,14 +14,19 @@ export default class PlaySpaceSound {
   }
 
   playOrStop() {
-    this.audio.paused ? 
-    this.audio.play() : 
-    this.audio.pause();
+    if (this.audio.paused) {
+      this.audio.play()
+    } else {
+      this.audio.pause();
+      this.audio.src = this.audio.src;
+    }
   }
 
   buttonHandle() {
     this.changeIconView();
     this.playOrStop();
+    
+    console.log(this.playIcon);
   }
 
   setStartPlayState() {
