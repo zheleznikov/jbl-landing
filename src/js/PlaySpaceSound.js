@@ -5,15 +5,12 @@ export default class PlaySpaceSound {
     this.playIcon = this.planet.querySelector(".track__svg_play");
     this.stopIcon = this.planet.querySelector(".track__svg_stop");
     this.audio = this.planet.querySelector(".track__audio");
-    // console.log(this.audio);
-
     this.handle();
   }
 
   changeIconView() {
-    // this.playIcon.classList.toggle("track__svg_off");
-    // this.stopIcon.classList.toggle("track__svg_off");
-    console.log('hey')
+    this.playIcon.classList.toggle("track__svg_off");
+    this.stopIcon.classList.toggle("track__svg_off");
   }
 
   playOrStop() {
@@ -27,7 +24,13 @@ export default class PlaySpaceSound {
     this.playOrStop();
   }
 
+  setStartPlayState() {
+    this.playIcon.classList.remove("track__svg_off");
+    this.stopIcon.classList.add("track__svg_off");
+  }
+
   handle() {
     this.button.addEventListener("click", this.buttonHandle.bind(this));
+    this.audio.addEventListener('ended', this.setStartPlayState.bind(this));
   }
 }

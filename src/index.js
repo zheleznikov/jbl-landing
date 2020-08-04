@@ -12,7 +12,7 @@ import RotateCard from './js/RotateCard';
 const planetBlocks = document.querySelectorAll('.planet-block');
 const cards = document.querySelectorAll('.card');
 
-window.onload = () => planetBlocks.forEach(planetBlock => audioVizualization(planetBlock));
+// window.onload = () => planetBlocks.forEach(planetBlock => audioVizualization(planetBlock));
 planetBlocks.forEach(planetBlock => new PlaySpaceSound(planetBlock));
 cards.forEach(card => new RotateCard(card));
 
