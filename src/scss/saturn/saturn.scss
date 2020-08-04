@@ -11,12 +11,16 @@
 
 
 .saturn {
-  // border: 1px solid red;
   position: relative;
   width: 100%;
-  // overflow: hidden;
+}
 
-  // padding-bottom: 300px;
+.saturn:hover .saturn__bg {
+  transform: scale(.9);
+}
+
+.saturn:hover .saturn__img {
+  transform: rotate(360deg);
 }
 
 @media screen and (max-width: 550px) {

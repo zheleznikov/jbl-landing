@@ -4,7 +4,7 @@
 @import './__text/social__text.scss';
 @import './__content/social__content.scss';
 @import './__layer/social__layer.scss';
-
+@import './__link/social__link.scss';
 .social {
   position: relative;
   width: 100%;
@@ -14,10 +14,8 @@
   // border: 1px solid red;
   padding-bottom: 60px;
   // margin-top: -80px;
-
-
-
-
-
 }
 
+.social:hover .social__planet {
+  transform: scale(.9);
+}

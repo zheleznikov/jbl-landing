@@ -5,23 +5,20 @@
 @import './__img/lead__img.scss';
 @import './__bg/lead__bg.scss';
 @import './__layer/lead__layer.scss';
-
 .lead {
-  // margin-top: 148px;
   margin-bottom: 200px;
-  // border: 1px solid red;
   position: relative;
 }
 
-// .lead:hover .lead__bg {
-// transform: translateX(20%);
-// }
+.lead:hover .lead__bg {
+  transform: scale(1.1);
+  opacity: .8;
+}
 
 
 
 @media screen and (max-width: 950px) {
   .lead {
     margin-bottom: 0px;
-    overflow: hidden;
   }
 }

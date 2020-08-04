@@ -5,6 +5,7 @@ export default class PlaySpaceSound {
     this.playIcon = this.planet.querySelector(".track__svg_play");
     this.stopIcon = this.planet.querySelector(".track__svg_stop");
     this.audio = this.planet.querySelector(".track__audio");
+
     this.handle();
   }
 
@@ -25,7 +26,6 @@ export default class PlaySpaceSound {
   buttonHandle() {
     this.changeIconView();
     this.playOrStop();
-    
     console.log(this.playIcon);
   }
 

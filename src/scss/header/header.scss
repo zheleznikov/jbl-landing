@@ -10,23 +10,18 @@
 @import './__img/header__img.scss';
 @import './__layer/header__layer.scss';
 @import './__background/header__background.scss';
+
 .header {
-  // width: 1164px;
   width: 100%;
   margin: 0 auto;
-  // overflow: hidden;
-  // padding-bottom: 50px; // для наглядности
+
 }
 
-// .header:hover .header__bg {
-//   transform: scale(1.2);
-// }
-
-
-
-@media screen and (max-width: 768px) {
-  .header {
-    // height: 1007px;
-    // border:1px solid red;
-  }
+.header:hover .header__bg {
+  transform: scale(1.1);
 }
+
+.header:hover .header__planet {
+  transform: scale(.9);
+}
+

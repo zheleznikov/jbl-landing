@@ -1,0 +1,27 @@
+.social__link {
+  transition: all .5s;
+  display: flex;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+  background: #c9ef5d;
+  border-radius: 50%;
+  margin-right: 12px;
+  
+  path {
+    transition: all .5s;
+  }
+}
+
+.social__link:hover {
+  transform: scale(.9);
+  background-color: invert($color: #c9ef5d);
+  background-color: inherit;
+
+  path {
+    fill:#c9ef5d;
+  }
+
+
+}

@@ -1,9 +1,10 @@
 .saturn__bg {
   position: absolute;
-  // border: 1px solid white;
   right: -700px;
   top: -200px;
   z-index: -2;
   opacity: .5;
+
+  transition: all 60s;
   
 }

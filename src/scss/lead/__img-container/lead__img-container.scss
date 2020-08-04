@@ -3,8 +3,8 @@
   position: relative;
   height: 320px;
   z-index: 2;
-  // border: 1px solid red;
-  // margin-top: 148px;
+transition: all 30s;
+transform: scale(.9);
 }
 
 @media screen and (max-width: 950px) {
