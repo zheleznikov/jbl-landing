@@ -1,0 +1,13 @@
+.quiz__icon {
+  position: absolute;
+  right: -60px;
+  top: 30px;
+  // z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .quiz__icon {
+    right: -40px;
+    top: -40px;
+  }
+}
