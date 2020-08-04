@@ -2,15 +2,13 @@
   position: absolute;
   z-index:1;
   // border: 1px solid white;
-  width: 120%;
-  height: 120%;
-  top: -32px;
-  left: -32px;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: -0px;
   object-fit: cover;
+  opacity: .7;
 }
 
-.card__bg_hor {
-  width: 110%;
-  height: 140%;
-  left: 0;
-}
+
+

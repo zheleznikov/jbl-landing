@@ -1,7 +1,25 @@
 .card__front {
-overflow: hidden;
+  overflow: hidden;
+  display: flex;
+  // justify-content: center;
+  padding-top: 30px;
+  align-items: center;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.card__front_main {
+  justify-content: center;
+  padding-top: 0;
 }
 
 .card__front_rotate {
   transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 950px) {
+  .card__front {
+    justify-content: center;
+    padding-top: 0;
+  }
 }

@@ -9,6 +9,7 @@
   grid-template-columns: 295px 1fr 1fr;
   grid-template-rows: 201px 201px;
   grid-gap: 32px;
+  position: relative;
 }
 
 @media screen and (max-width: 1440px) {
@@ -26,9 +27,17 @@
     "fourth"
     "fifth";
 
-    grid-template-columns: 1fr;
+    grid-template-columns: 450px;
+    justify-content: center;
     grid-template-rows: 201px 201px 201px 201px 201px;
-    grid-gap: 32px;
+    grid-gap: 16px;
   }
 
+}
+
+@media screen and (max-width: 450px) {
+  .advantages__container {
+    grid-template-columns: 100%;
+    width: 100%;
+  }
 }

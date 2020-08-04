@@ -8,7 +8,9 @@
 https://github.com/aFarkas/lazysizes
 https://github.com/aFarkas/lazysizes/tree/gh-pages/plugins/unveilhooks
 
-Чтобы это работало нужно добавить изображениям вместо `src` атрибут `data-src` и класс `lazyload`.
+Чтобы это работало нужно добавить изображениям вместо `src (srcset)` атрибут `data-src (data-srcset)` и класс `lazyload`.
+
+Для background
 Пример css для background:
     
     .footer.lazyloaded {

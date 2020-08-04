@@ -2,51 +2,28 @@
 @import "./__front/card__front.scss";
 @import "./__front-and-back/card__front-and-back.scss";
 @import "./__bg/card__bg.scss";
+@import "./__title/card__title.scss";
+@import "./__text/card__text.scss";
 
 .card {
-  // width: 405px;
-  // height: 201px;
-  // box-sizing: border-box;
-  // background-color: #b768cc;
   border-radius: 6px;
   position: relative;
   transition: all 0.1s linear;
   perspective: 1000px;
-
+  cursor: pointer;
 }
 
 .card_main {
   grid-area: main;
-  // background: #b768cc url(./images/card-main-bg-1.png);
-  width: 295px;
-  height: 435px;
-  background-position: center;
-  // background-repeat: repeat;
-}
-
-.card_main.lazyloaded {
-  // background: #b768cc url(./images/card-main-bg-1.png);
-  // background-position: center;
-  // background-size: auto;
 }
 
 .card_second {
   grid-area: second;
 }
 
-// .card_second.lazyloaded {
-//   background: #b768cc url(../../images/card-second-bg.png);
-//   background-position: center;
-// }
-
 .card_third {
   grid-area: third;
 }
-
-// .card_third.lazyloaded {
-//   background: #b768cc url(../../images/card-third-bg.png);
-//   background-position: center;
-// }
 
 .card_fourth {
   grid-area: fourth;

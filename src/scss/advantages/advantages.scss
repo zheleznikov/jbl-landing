@@ -6,3 +6,9 @@
   position: relative;
   margin-bottom: 130px;
 }
+
+@media screen and (max-width: 520px) {
+  .advantages {
+    padding-top: 40px;
+  }
+}

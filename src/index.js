@@ -24,6 +24,8 @@ window.onload = function() {
   audioVizualization(mars);
 }
 
+const cards = document.querySelectorAll('.card');
+cards.forEach(card => new RotateCard(card));
 
 
 
@@ -52,9 +54,5 @@ new simpleParallax(planets, {
 
 // rotate
 
-const cards = document.querySelectorAll('.card');
-console.log(cards);
 
-cards.forEach(card => new RotateCard(card))
 
-// new RotateCard(cards);
