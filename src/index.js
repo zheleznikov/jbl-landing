@@ -9,22 +9,11 @@ import audioVizualization from './js/audioVizualization';
 import PlaySpaceSound from './js/PlaySpaceSound';
 import RotateCard from './js/RotateCard';
 
-const jupiter = document.querySelector('.jupiter');
-const saturn = document.querySelector('.saturn');
-const mars = document.querySelector('.mars');
-
-new PlaySpaceSound(jupiter);
-new PlaySpaceSound(saturn);
-new PlaySpaceSound(mars);
-
-
-window.onload = function() {
-  audioVizualization(jupiter);
-  audioVizualization(saturn);
-  audioVizualization(mars);
-}
-
+const planetBlocks = document.querySelectorAll('.planet-block');
 const cards = document.querySelectorAll('.card');
+
+window.onload = () => planetBlocks.forEach(planetBlock => audioVizualization(planetBlock));
+planetBlocks.forEach(planetBlock => new PlaySpaceSound(planetBlock));
 cards.forEach(card => new RotateCard(card));
 
 
@@ -52,7 +41,7 @@ new simpleParallax(planets, {
 // });
 
 
-// rotate
+
 
 
 
