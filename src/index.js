@@ -31,16 +31,16 @@ new SmoothScroll('a[href*="#"]', {
 });
 
 new simpleParallax(parallaxEls, {
-  delay: 0.8,
+  delay: 1.2,
   orientation: 'down',
   orientation: 'up',
-  scale: 1.1,
+  scale: 1.3,
   overflow: true,
   // transition: 'ease-in-out'
 });
 
 new simpleParallax(marsParallax, {
-  delay: 1.1,
+  delay: 0.9,
   orientation: 'down',
   orientation: 'up',
   scale: 1.3,
