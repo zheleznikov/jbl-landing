@@ -10,6 +10,15 @@
   margin-bottom: 300px;
 }
 
+.ganymede:hover .ganymede__bg {
+  transform: scale(1.2);
+}
+
+.ganymede:hover .ganymede__layer_stars {
+  transform: scale(0.7);
+  opacity: .1;
+}
+
 @media screen and (max-width: 950px) {
   .ganymede {
     margin-bottom: 100px;

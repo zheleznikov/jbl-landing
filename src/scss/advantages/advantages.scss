@@ -8,6 +8,14 @@
   margin-bottom: 130px;
 }
 
+.advantages:hover .card__bg{ 
+  transform: scale(2);
+}
+
+.advantages:hover .advantages__bg{ 
+  transform: scale(.7);
+}
+
 @media screen and (max-width: 950px) {
   .advantages {
     padding-top: 250px;

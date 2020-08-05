@@ -1,3 +1,6 @@
+@import './__circle/img-container__circle.scss';
+@import './__line/img-container__line.scss';
+
 .img-container {
   position: relative;
   width: 88px;
@@ -5,39 +8,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
-.img-container__line {
- 
-  width: 150px;
-  height: 2px;
-  background: white;
-  transform: rotate(-35deg);
-  z-index: -1;
-}
 
-.img-container__circle {
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  border: 2px solid white;
-  border-radius: 50%;
-  background-color: #975EB9;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.img-container__circle_second {
-  background-color: #B975CA;
-}
 
-.img-container__circle_third {
-  background-color: #B770C8;
-}
-
-.img-container__circle_fourth {
-  background-color: #B771C9;
-}

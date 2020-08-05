@@ -9,8 +9,11 @@
 .mars {
   margin-top: 100px;
   margin-bottom: 300px;
+}
 
-  // margin-bottom: 500px;
+.mars:hover .saturn__layer_stars {
+  opacity: 1;
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 1220px) {
