@@ -6,9 +6,11 @@
 .logo_hype {
   align-self: flex-end;
   fill: white;
+  transition: all .5s;
 }
 
 .logo_jbl:hover, .logo_hype:hover {
-  fill:#c9ef5d;
+  // fill:#c9ef5d;
   transform: scale(0.98);
+  opacity: .9;
 }

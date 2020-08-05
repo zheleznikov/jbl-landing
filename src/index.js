@@ -3,7 +3,7 @@ import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import "lazysizes/plugins/unveilhooks/ls.unveilhooks";
 import Rellax from 'rellax';
-
+import SmoothScroll from 'smooth-scroll';
 import audioVizualization from './js/audioVizualization';
 import PlaySpaceSound from './js/PlaySpaceSound';
 import RotateCard from './js/RotateCard';
@@ -18,7 +18,7 @@ window.onload = () => planetBlocks.forEach(planetBlock => audioVizualization(pla
 planetBlocks.forEach(planetBlock => new PlaySpaceSound(planetBlock));
 cards.forEach(card => new RotateCard(card));
 
-
+ const scroll = new SmoothScroll('a[href*="#"]', {speed: 1000, easing: 'easeInCubic'});
 // paralax-scrolling
 
 // const parallax = new Rellax('.planet');

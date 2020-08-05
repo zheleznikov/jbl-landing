@@ -2,6 +2,7 @@
   transition: all .5s;
   display: flex;
   justify-content: center;
+  align-items: center;
 
   width: 48px;
   height: 48px;
@@ -14,6 +15,26 @@
   }
 }
 
+.social__link_down {
+  transition: all .5s;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__link_down:hover  .social__svg_text {
+  transform: rotate(180deg);
+}
+
+.social__link_down:hover  .social__svg_union {
+  transform: scale(1.1);
+}
+
+.social__link_down:active {
+  transform: scale(.9);
+}
+
 .social__link:hover {
   transform: scale(.9);
   background-color: invert($color: #c9ef5d);
@@ -21,7 +42,10 @@
 
   path {
     fill:#c9ef5d;
+    stroke: #c9ef5d;
   }
+
+
 
 
 }
