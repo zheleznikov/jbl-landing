@@ -4,12 +4,8 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  // border: 1px solid red;
 
-
-  a {
-    align-self: center;
-    // margin-bottom: 80px;
-  }
 
 }
 
@@ -21,6 +17,6 @@
 
 @media screen and (max-width: 950px) {
   .social__content {
-    flex-direction: column-reverse;
+    // flex-direction: column-reverse;
   }
 }

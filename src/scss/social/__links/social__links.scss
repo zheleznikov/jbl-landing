@@ -2,17 +2,13 @@
   align-self: flex-end;
   display: flex;
   margin-top: 20px;
-
-
-  
+  // border: 1px solid green;
 }
-
-
-
 
 @media screen and (max-width: 950px) {
   .social__links {
     align-self: center;
     margin-bottom: 50px;
+    margin-top: 100px;
   }
 }
