@@ -26,7 +26,6 @@ export default class PlaySpaceSound {
   buttonHandle() {
     this.changeIconView();
     this.playOrStop();
-    console.log(this.playIcon);
   }
 
   setStartPlayState() {

@@ -1,34 +1,34 @@
 window.AudioContext = window.AudioContext || window.webkitAudioContext;
+
 import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import "lazysizes/plugins/unveilhooks/ls.unveilhooks";
-import Rellax from 'rellax';
 import SmoothScroll from 'smooth-scroll';
+import simpleParallax from 'simple-parallax-js';
+
 import audioVizualization from './js/audioVizualization';
 import PlaySpaceSound from './js/PlaySpaceSound';
 import RotateCard from './js/RotateCard';
+import removeHash from './js/removeHash';
 
-import simpleParallax from 'simple-parallax-js';
-const planetBlocks = document.querySelectorAll('.planet-block');
-const cards = document.querySelectorAll('.card');
-const planets = document.querySelectorAll('.planet');
-const parallaxEls = document.querySelectorAll('.parallax');
-const marsParallax = document.querySelector('.parallax-mars')
-
+import {
+  planetBlocks,
+  cards,
+  parallaxEls,
+  marsParallax,
+  linkToListen
+}
+from './js/constants';
 
 window.onload = () => planetBlocks.forEach(planetBlock => audioVizualization(planetBlock));
 planetBlocks.forEach(planetBlock => new PlaySpaceSound(planetBlock));
 cards.forEach(card => new RotateCard(card));
 
- new SmoothScroll('a[href*="#"]', {speed: 1000, easing: 'easeInCubic'});
-// paralax-scrolling
 
-
-
-// const parallax = new Rellax('.parallax', {
-//   speed: 2,
-//   center: true,
-// });
+new SmoothScroll('a[href*="#"]', {
+  speed: 1000,
+  easing: 'easeInCubic'
+});
 
 new simpleParallax(parallaxEls, {
   delay: 0.8,
@@ -43,15 +43,9 @@ new simpleParallax(marsParallax, {
   delay: 1.1,
   orientation: 'down',
   orientation: 'up',
-
   scale: 1.3,
   overflow: true,
 });
 
 
-
-
-
-
-
-
+linkToListen.addEventListener('click', removeHash);
