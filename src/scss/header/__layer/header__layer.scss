@@ -5,20 +5,17 @@
   width: 736px;
   height: 857px;
   background: linear-gradient(90.23deg, rgba(7, 6, 24, 0.8) 0.28%, rgba(7, 6, 24, 0) 88.65%);
-  //  border: 1px solid red;
   z-index: -1;
   // opacity: .9;
 }
 
 .header__layer_2 {
-  // border: 1px solid red;
   position: absolute;
   top: 0;
   left: -736px;
   width: 736px;
   height: 857px;
   background: linear-gradient(90.23deg, rgba(7, 6, 24, 0) 88.65% 0.28%, rgba(7, 6, 24, 0.8));
-  // border: 1px solid red;
   z-index: -1;
 }
 
@@ -40,8 +37,6 @@
     height: 181px;
     z-index: -1;
 
-    // background: linear-gradient(180, #09081B 0.28%, rgba(9, 8, 27, 0) 88.65%);
-    // background: linear-gradient(180deg, #09081B 0.28%, rgba(9, 8, 27, 0) 88.65%);
     background: linear-gradient(180deg, rgba(9, 8, 27, 0) 0.28%, #09081B 88.65%);
   }
 }

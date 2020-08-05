@@ -4,13 +4,13 @@
 @import './scss/mixins.scss';
 @import './scss/variables.scss';
 
-@import './scss/page.scss'; // не использую
+// @import './scss/page.scss';
+@import './scss/page/page.scss';
 @import './scss/header/header.scss';
 @import './scss/logo/logo.scss';
 @import './scss/social/social.scss';
 
 @import './scss/track/track.scss';
-@import './scss/space/space.scss'; // может быть не пригодится
 @import './scss/lead/lead.scss';
 @import './scss/jupiter/jupiter.scss';
 @import './scss/planet/planet.scss';

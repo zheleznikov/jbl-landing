@@ -11,8 +11,19 @@
   align-items: center;
   justify-content: center;
   margin-right: 8px;
+  transition: all .5s;
 }
 
 .track__button:active {
   transform: scale(0.9);
 }
+
+.track__button:hover {
+  transform: scale(.95);
+  background-color: inherit;
+
+  rect {
+    fill: $emphasized-color;
+  }
+}
+

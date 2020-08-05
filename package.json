@@ -5,11 +5,9 @@
   "main": "gulpfile.js",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "circletype": "^2.3.0",
     "core-js": "^3.4.1",
     "lazysizes": "^5.2.2",
     "normalize.css": "^8.0.1",
-    "rellax": "^1.12.1",
     "simple-parallax-js": "^5.6.1",
     "smooth-scroll": "^16.1.3"
   },
