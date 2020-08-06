@@ -1,0 +1,21 @@
+.header__bg, .lead__bg, .saturn__bg {
+  animation: kenburns-top 180s ease-out infinite both;
+}
+
+@keyframes kenburns-top {
+  0% {
+    transform: scale(1) translateY(0);
+    transform-origin: 50% 16%;
+  }
+  50% {
+    transform: scale(1.25) translateY(-15px);
+    transform-origin: top;
+  }
+
+  100% {
+    transform: scale(1) translateY(0);
+    transform-origin: 50% 16%;
+  }
+
+}
+

@@ -1,13 +1,29 @@
 const planetBlocks = document.querySelectorAll('.planet-block');
 const cards = document.querySelectorAll('.card');
-const parallaxEls = document.querySelectorAll('.parallax');
-const marsParallax = document.querySelector('.parallax-mars');
-const linkToListen = document.querySelector('.social__link_down');
+const linkToHandle = document.querySelector('.social__link_down');
+
+// IMAGES TO PARALLAX
+const parallaxImgs = document.querySelectorAll('.parallax');
+const marsInHeaderImg = document.querySelector('.header__planet_1');
+const smallJupiterImg = document.querySelector('.social__planet');
+const whiteHeadsetsImg = document.querySelector('.lead__img-container');
+const jupiterImg = document.querySelector('.jupiter__img');
+const saturnImg = document.querySelector('.saturn__img');
+const marsImg = document.querySelector('.mars__img');
+const ganymedeImg = document.querySelector('.ganymede__img');
+const cometImg = document.querySelector('.comet__img');
 
 export {
   planetBlocks,
   cards,
-  parallaxEls,
-  marsParallax,
-  linkToListen
+  linkToHandle,
+  parallaxImgs,
+  marsInHeaderImg,
+  smallJupiterImg,
+  whiteHeadsetsImg,
+  jupiterImg,
+  saturnImg,
+  marsImg,
+  ganymedeImg,
+  cometImg
 }
