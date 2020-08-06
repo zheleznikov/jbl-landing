@@ -4,10 +4,11 @@
   animation: kenburns-top 180s ease-out infinite both;
 }
 
-.lead__bg, .saturn__bg {
+.lead__bg,
+.saturn__bg,
+.card__bg {
   animation: kenburns-top 90s ease-out infinite both;
 }
-
 
 @keyframes kenburns-top {
   0% {
@@ -28,7 +29,7 @@
 // for background stars
 
 .stars {
-  animation: kenburns-top-opacity 180s ease-out infinite both;
+  animation: kenburns-top-opacity 60s ease-out infinite both;
 }
 
 @keyframes kenburns-top-opacity {
@@ -40,13 +41,50 @@
   50% {
     transform: scale(1.25) translateY(-15px);
     transform-origin: top;
-    opacity: .1;
+    opacity: 0.1;
   }
 
   100% {
     transform: scale(1) translateY(0);
     transform-origin: 50% 16%;
     opacity: 1;
+  }
+}
+
+// for headsets
+
+.lead__img, .advantages__img {
+  transition: all 2s;
+}
+.lead__img:hover , .advantages__img:hover {
+  transform: scale(1.1);
+}
+
+
+// for playing space sounds buttons ans canvas
+
+.vibrate-2 {
+	animation: vibrate-2 .5s linear infinite both;
+}
+
+ @keyframes vibrate-2 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(1px, -1px);
+  }
+  40% {
+    transform: translate(1px, 1px);
+  }
+  60% {
+    transform: translate(-1px, 1px);
+  }
+  80% {
+    transform: translate(-1px, -1px);
+  }
+  100% {
+    transform: translate(0);
   }
 }
 

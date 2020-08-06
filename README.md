@@ -36,4 +36,6 @@ https://codepen.io/cferdinandi/pen/wQzrdM
 ### анимация
 https://animista.net/play/background/ken-burns/kenburns-top
 
-Чтобы отключить приближение фонов надо в `index.scss` отключить `@import './scss/animation.scss'` на 25 строчке.
+Чтобы отключить анимацию надо:
+- в `index.scss` отключить `@import './scss/animation.scss'` на 25 строчке;
+- в `PlaySpaceSound.js` в методах `changeIconView` и `setStartPlayState` убрать две нижние строчки

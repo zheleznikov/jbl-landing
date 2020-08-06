@@ -13,6 +13,7 @@ const marsImg = document.querySelector('.mars__img');
 const ganymedeImg = document.querySelector('.ganymede__img');
 const cometImg = document.querySelector('.comet__img');
 
+
 export {
   planetBlocks,
   cards,
@@ -25,5 +26,5 @@ export {
   saturnImg,
   marsImg,
   ganymedeImg,
-  cometImg
+  cometImg,
 }

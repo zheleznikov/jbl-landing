@@ -23,7 +23,7 @@ import {
   saturnImg,
   marsImg,
   ganymedeImg,
-  cometImg
+  cometImg,
 }
 from './js/constants';
 
@@ -64,4 +64,6 @@ new simpleParallax(saturnImg, { ...defaultDelay, ...parallaxConfig });
 new simpleParallax(marsImg, { ...defaultDelay, ...parallaxConfig });
 new simpleParallax(ganymedeImg, { ...defaultDelay, ...parallaxConfig });
 new simpleParallax(cometImg, { delay: 0.5, ...parallaxConfig });
+
+
 
