@@ -1,6 +1,13 @@
-.header__bg, .lead__bg, .saturn__bg {
+// for background
+
+.header__bg {
   animation: kenburns-top 180s ease-out infinite both;
 }
+
+.lead__bg, .saturn__bg {
+  animation: kenburns-top 90s ease-out infinite both;
+}
+
 
 @keyframes kenburns-top {
   0% {
@@ -16,6 +23,30 @@
     transform: scale(1) translateY(0);
     transform-origin: 50% 16%;
   }
+}
 
+// for background stars
+
+.stars {
+  animation: kenburns-top-opacity 180s ease-out infinite both;
+}
+
+@keyframes kenburns-top-opacity {
+  0% {
+    transform: scale(1) translateY(0);
+    transform-origin: 50% 16%;
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.25) translateY(-15px);
+    transform-origin: top;
+    opacity: .1;
+  }
+
+  100% {
+    transform: scale(1) translateY(0);
+    transform-origin: 50% 16%;
+    opacity: 1;
+  }
 }
 
