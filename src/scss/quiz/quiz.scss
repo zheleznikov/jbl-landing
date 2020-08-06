@@ -30,8 +30,15 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .quiz {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (max-width: 460px) {
   .quiz {
     width:98%;
+    margin-bottom: 40px;
   }
 }
