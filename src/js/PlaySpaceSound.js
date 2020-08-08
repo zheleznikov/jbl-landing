@@ -14,8 +14,6 @@ export default class PlaySpaceSound {
     this.playIcon.classList.toggle("track__svg_off");
     this.stopIcon.classList.toggle("track__svg_off");
 
-    this.canvas.classList.toggle('vibrate-2');
-    this.button.classList.toggle('vibrate-2');
   }
 
   playOrStop() {
@@ -35,11 +33,6 @@ export default class PlaySpaceSound {
   setStartPlayState() {
     this.playIcon.classList.remove("track__svg_off");
     this.stopIcon.classList.add("track__svg_off");
-
-    this.canvas.classList.remove('vibrate-2');
-    this.button.classList.remove('vibrate-2');
-
-
   }
 
   handle() {

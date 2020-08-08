@@ -1,6 +1,7 @@
 import simpleParallax from 'simple-parallax-js';
 
 import {
+  parallaxImgs,
   marsInHeaderImg,
   smallJupiterImg,
   whiteHeadsetsImg,

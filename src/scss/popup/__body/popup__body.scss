@@ -1,0 +1,9 @@
+.popup__body {
+  display: flex;
+  flex-direction: column;
+  // overflow: scroll;
+  // border: 1px solid red;
+  max-width: 580px;
+  margin: 0 auto;
+  padding-top: 100px;
+}

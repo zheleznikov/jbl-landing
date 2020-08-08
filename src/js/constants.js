@@ -13,6 +13,10 @@ const marsImg = document.querySelector('.mars__img');
 const ganymedeImg = document.querySelector('.ganymede__img');
 const cometImg = document.querySelector('.comet__img');
 
+const popup = document.querySelector('.popup');
+const jblLogoPopup = popup.querySelector('.logo_jbl');
+const hypeLogoPopup = popup.querySelector('.logo_hype');
+
 
 export {
   planetBlocks,
@@ -27,4 +31,7 @@ export {
   marsImg,
   ganymedeImg,
   cometImg,
+  popup,
+  jblLogoPopup,
+  hypeLogoPopup
 }

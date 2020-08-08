@@ -1,15 +1,43 @@
+$logo-jbl-size: 65px;
+$logo-jbl-size-popup: 47px;
 .logo_jbl {
-  margin-right: 40px;
+  // margin-right: 36px;
   fill: white;
+  width: $logo-jbl-size;
+  height: $logo-jbl-size;
+
+  rect {
+    width: $logo-jbl-size;
+    height: $logo-jbl-size;
+  }
 }
 
 .logo_hype {
   align-self: flex-end;
   fill: white;
   transition: all .5s;
+  width: 103px;
+  height: 29px;
 }
 
-.logo_jbl:hover, .logo_hype:hover {
+.logo_jbl:hover,
+.logo_hype:hover {
   transform: scale(0.98);
   opacity: .9;
+}
+
+.logo_jbl_popup {
+  width: $logo-jbl-size-popup;
+  height: $logo-jbl-size-popup;
+
+  // rect {
+  //   width: $logo-jbl-size-popup;
+  //   height: $logo-jbl-size-popup;
+  // }
+}
+
+.logo_hype_popup {
+  width: 58px;
+  height: 17px;
+  align-self: center;
 }
