@@ -6,6 +6,7 @@ export default class PlaySpaceSound {
     this.stopIcon = this.planet.querySelector(".track__svg_stop");
     this.audio = this.planet.querySelector(".track__audio");
     this.canvas = this.planet.querySelector(".track__canvas");
+    this.stopButtons = this.planet.querySelectorAll('.stop-button');
 
     this.handle();
   }
@@ -13,7 +14,12 @@ export default class PlaySpaceSound {
   changeIconView() {
     this.playIcon.classList.toggle("track__svg_off");
     this.stopIcon.classList.toggle("track__svg_off");
+  }
 
+  stopSound () {
+    this.audio.pause();
+    this.audio.src = this.audio.src;
+    this.setStartPlayState();
   }
 
   playOrStop() {
@@ -36,6 +42,10 @@ export default class PlaySpaceSound {
   }
 
   handle() {
+    if (this.stopButtons) {
+      // console.log(this.stopButtons)
+      this.stopButtons.forEach(button => button.addEventListener('click' , this.stopSound.bind(this)))
+    }
     this.button.addEventListener("click", this.buttonHandle.bind(this));
     this.audio.addEventListener('ended', this.setStartPlayState.bind(this));
   }

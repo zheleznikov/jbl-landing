@@ -20,7 +20,8 @@ const hypeLogoPopup = popup.querySelector('.logo_hype');
 const openButtonPopup = document.querySelector('.quiz__button');
 const page = document.querySelector('.page');
 
-const quizBlock = document.querySelector('.popup__body');
+const quizBlock = document.querySelector('.popup__content');
+const nextButton = document.querySelector('.popup__next');
 
 export {
   planetBlocks,
@@ -40,5 +41,6 @@ export {
   hypeLogoPopup,
   openButtonPopup,
   page,
-  quizBlock
+  quizBlock,
+  nextButton
 }

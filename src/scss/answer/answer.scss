@@ -22,3 +22,17 @@
 .answer:active {
   transform: scale(.98);
 }
+
+.answer:disabled {
+  transform: scale(1);
+
+}
+
+.answer_correct {
+  border-right: 5px solid #FF5630;
+}
+
+.answer__wrong {
+  border-right: 5px solid #19DF20;
+
+}

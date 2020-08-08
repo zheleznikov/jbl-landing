@@ -3,24 +3,25 @@ export default class Quiz {
     this.quiz = quiz;
     this.data = data;
 
-    this.number = this.quiz.querySelector('.popup__number_span');
-    this.title = this.quiz.querySelector('.popup__title');
-    this.audio = this.quiz.querySelector('.track__audio');
-    this.answer1 = this.quiz.querySelector('.answer__title_1');
-    this.answer2 = this.quiz.querySelector('.answer__title_2');
-    this.answer1Button = this.quiz.querySelector('.answer_1');
-    this.answer2Button = this.quiz.querySelector('.answer_2');
-    this.hint1 = this.quiz.querySelector('.answer__hint_1');
-    this.hint2 = this.quiz.querySelector('.answer__hint_2');
+    this.number = this.quiz.querySelector(".popup__number_span");
+    this.title = this.quiz.querySelector(".popup__title");
+    this.audio = this.quiz.querySelector(".track__audio");
+    this.answer1 = this.quiz.querySelector(".answer__title_1");
+    this.answer2 = this.quiz.querySelector(".answer__title_2");
+    this.answer1Button = this.quiz.querySelector(".answer_1");
+    this.answer2Button = this.quiz.querySelector(".answer_2");
+    this.hint1 = this.quiz.querySelector(".answer__hint_1");
+    this.hint2 = this.quiz.querySelector(".answer__hint_2");
 
-    this.answersBlock = this.quiz.querySelector('.popup__answers')
+    this.answersBlock = this.quiz.querySelector(".popup__answers");
 
-    this.nextButton = document.querySelector('.popup__next');
+    this.nextButton = this.quiz.querySelector(".popup__next");
 
+    this.setStartState();
     this.render();
     this.handle();
-
   }
+
 
   render() {
     this.number.textContent = this.data.number;
@@ -35,34 +36,63 @@ export default class Quiz {
 
   showHint(n) {
     if (this.data.answers[n].isCorrect) {
-      console.log('correct')
-      this.hint2.classList.add('answer__hint_on');
-      n = 0 ?
-      this.hint1.classList.add('answer__hint_on') :
-      this.hint2.classList.add('answer__hint_on');
-      this.answersBlock.classList.add('popup__answers_clicked');
+      console.log("correct");
+
+      this.hint2.classList.add("answer__hint_on");
+      n = 0
+        ? this.hint1.classList.add("answer__hint_on")
+        : this.hint2.classList.add("answer__hint_on");
+      this.answersBlock.classList.add("popup__answers_clicked");
+
     } else {
-      console.log('wrong');
-      this.hint1.classList.add('answer__hint_on');
-      this.hint2.classList.add('answer__hint_on');
-      this.answersBlock.classList.add('popup__answers_clicked');
+      console.log("wrong");
+      this.hint1.classList.add("answer__hint_on");
+      this.hint2.classList.add("answer__hint_on");
+      this.answersBlock.classList.add("popup__answers_clicked");
     }
-    this.answer1Button.setAttribute('disabled', true);
-    this.answer2Button.setAttribute('disabled', true);
+
+    this.answer1Button.setAttribute("disabled", "disabled");
+    this.answer2Button.setAttribute("disabled", "disabled");
+    this.nextButton.removeAttribute("disabled");
   }
+
+  setStartState() {
+    this.closeHints();
+    this.disableNextButton();
+    this.enableChooseButtons();
+  }
+
+  closeHints() {
+    this.hint1.classList.remove("answer__hint_on");
+    this.hint2.classList.remove("answer__hint_on");
+    this.answersBlock.classList.remove("popup__answers_clicked");
+  }
+
+  enableChooseButtons() {
+    this.answer1Button.removeAttribute("disabled");
+    this.answer2Button.removeAttribute("disabled");
+  }
+
+  disableNextButton() {
+    this.nextButton.setAttribute('disabled', true);
+  }
+
+  
 
   handleClick1() {
     this.showHint(0);
+    console.log('0');
   }
 
   handleClick2() {
     this.showHint(1);
-    // console.log('hey')
+    console.log('1');
+
   }
 
-  handle() {
-    this.answer1Button.addEventListener('click', this.handleClick1.bind(this));
-    this.answer2Button.addEventListener('click', this.handleClick2.bind(this));
 
+  handle() {
+    this.answer1Button.addEventListener("click", this.handleClick1.bind(this));
+    this.answer2Button.addEventListener("click", this.handleClick2.bind(this));
   }
 }
