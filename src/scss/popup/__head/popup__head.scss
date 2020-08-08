@@ -3,9 +3,12 @@
   width: 580px;
   margin: 0 auto;
   display: flex;
-  border: 1px solid red;
+  // border: 1px solid red;
+  flex-basis: 110px;
   height: 110px;
+  flex: auto;
   align-items: center;
+  // flex-shrink: 1;
 
   a {
     margin-right: 26px;

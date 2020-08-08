@@ -1,6 +1,6 @@
 .popup__content {
   width: 730px;
-  height: 100vh;
+  // height: 100vh;
   background: #FAFAFA;
   position: relative;
   box-sizing: border-box;
@@ -9,6 +9,7 @@
   // background: #fff url(./images/popup-bg.png);
   background-position: top left;
   background-repeat: no-repeat;
-  display: flex;
+  // display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }

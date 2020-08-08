@@ -36,6 +36,13 @@ window.onload = () => {
 changeLogoSizeInPopup();
 
 
+document.querySelector('.answer_1').addEventListener('click' , () => {
+  console.log(document.querySelectorAll('.answer__hint'));
+
+  document.querySelectorAll('.answer__hint').forEach(hint => hint.classList.toggle('answer__hint_on'));
+  document.querySelectorAll('.popup__answers').forEach(answer => answer.classList.toggle('popup__answers_clicked'));
+})
+
 
 
 
