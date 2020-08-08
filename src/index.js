@@ -11,7 +11,7 @@ import PlaySpaceSound from './js/PlaySpaceSound';
 import RotateCard from './js/RotateCard';
 import removeHash from './js/removeHash';
 import quizData from './js/quizData';
-import changeLogoSize from './js/logos';
+import changeLogoSizeInPopup from './js/logos';
 
 import {
   planetBlocks,
@@ -23,14 +23,20 @@ from './js/constants';
 
 
 window.AudioContext = window.AudioContext || window.webkitAudioContext;
-window.onload = () => planetBlocks.forEach(planetBlock => audioVizualization(planetBlock));
 planetBlocks.forEach(planetBlock => new PlaySpaceSound(planetBlock));
 cards.forEach(card => new RotateCard(card));
 linkToHandle.addEventListener('click', removeHash);
 
 new PlaySpaceSound(popup);
-window.onload = () => audioVizualization(popup);
-changeLogoSize();
+window.onload = () => {
+  planetBlocks.forEach(planetBlock => audioVizualization(planetBlock, 50));
+  audioVizualization(popup, 150);
+};
+
+changeLogoSizeInPopup();
+
+
+
 
 
 

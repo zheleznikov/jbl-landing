@@ -6,7 +6,9 @@
 @import './__number/popup__number.scss';
 @import './__title/popup__title.scss';
 @import './__track/popup__track.scss';
-
+@import './__answers/popup__answers.scss';
+@import './__next/popup__next.scss';
+@import './__foot/popup__foot.scss';
 .popup {
   position: fixed;
   top: 0;
@@ -17,5 +19,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10;
   // display: none;
 }
+
+// .popup_width-limit {
+//   max-width: 580px;
+//   margin: 10px auto;
+
+// }

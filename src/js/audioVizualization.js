@@ -1,4 +1,4 @@
-export default function audioVizualization(planet) {
+export default function audioVizualization(planet, canvasWidth) {
   const canvas = planet.querySelector('.track__canvas');
   const audio = planet.querySelector('.track__audio');
   const button = planet.querySelector('.track__button');
@@ -8,7 +8,7 @@ export default function audioVizualization(planet) {
   const source = context.createMediaElementSource(audio);
   source.connect(analyser);
   analyser.connect(context.destination);
-  canvas.width = 50;
+  canvas.width = canvasWidth;
   canvas.height = 20;
 
 
