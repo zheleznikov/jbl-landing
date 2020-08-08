@@ -17,6 +17,7 @@ import {
   planetBlocks,
   cards,
   linkToHandle,
+  popup
 }
 from './js/constants';
 
@@ -27,6 +28,8 @@ planetBlocks.forEach(planetBlock => new PlaySpaceSound(planetBlock));
 cards.forEach(card => new RotateCard(card));
 linkToHandle.addEventListener('click', removeHash);
 
+new PlaySpaceSound(popup);
+window.onload = () => audioVizualization(popup);
 changeLogoSize();
 
 
