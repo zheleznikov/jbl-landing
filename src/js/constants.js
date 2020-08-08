@@ -2,7 +2,7 @@ const planetBlocks = document.querySelectorAll('.planet-block');
 const cards = document.querySelectorAll('.card');
 const linkToHandle = document.querySelector('.social__link_down');
 
-// IMAGES TO PARALLAX
+// images to parallax
 const parallaxImgs = document.querySelectorAll('.parallax');
 const marsInHeaderImg = document.querySelector('.header__planet_1');
 const smallJupiterImg = document.querySelector('.social__planet');
@@ -13,10 +13,14 @@ const marsImg = document.querySelector('.mars__img');
 const ganymedeImg = document.querySelector('.ganymede__img');
 const cometImg = document.querySelector('.comet__img');
 
+// about popup
 const popup = document.querySelector('.popup');
 const jblLogoPopup = popup.querySelector('.logo_jbl');
 const hypeLogoPopup = popup.querySelector('.logo_hype');
+const openButtonPopup = document.querySelector('.quiz__button');
+const page = document.querySelector('.page');
 
+const quizBlock = document.querySelector('.popup__body');
 
 export {
   planetBlocks,
@@ -33,5 +37,8 @@ export {
   cometImg,
   popup,
   jblLogoPopup,
-  hypeLogoPopup
+  hypeLogoPopup,
+  openButtonPopup,
+  page,
+  quizBlock
 }

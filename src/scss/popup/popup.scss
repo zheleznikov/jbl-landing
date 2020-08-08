@@ -11,8 +11,8 @@
 @import './__foot/popup__foot.scss';
 @import './__main/popup__main.scss';
 .popup {
-  position: fixed;
-  top: 0;
+  position: absolute;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -22,11 +22,10 @@
   justify-content: center;
   z-index: 10;
   overflow: scroll;
+  overflow-x: hidden;
   // display: none;
 }
 
-// .popup_width-limit {
-//   max-width: 580px;
-//   margin: 10px auto;
-
-// }
+.popup_on {
+  display: flex;
+}

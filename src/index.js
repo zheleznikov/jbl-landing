@@ -12,12 +12,17 @@ import RotateCard from './js/RotateCard';
 import removeHash from './js/removeHash';
 import quizData from './js/quizData';
 import changeLogoSizeInPopup from './js/logos';
+import Popup from './js/Popup';
+import Quiz from './js/Quiz';
 
 import {
   planetBlocks,
   cards,
   linkToHandle,
-  popup
+  popup,
+  openButtonPopup,
+  page,
+  quizBlock
 }
 from './js/constants';
 
@@ -36,12 +41,15 @@ window.onload = () => {
 changeLogoSizeInPopup();
 
 
-document.querySelector('.answer_1').addEventListener('click' , () => {
-  console.log(document.querySelectorAll('.answer__hint'));
+new Popup(popup, openButtonPopup, page);
+new Quiz(quizBlock, quizData[0]);
 
-  document.querySelectorAll('.answer__hint').forEach(hint => hint.classList.toggle('answer__hint_on'));
-  document.querySelectorAll('.popup__answers').forEach(answer => answer.classList.toggle('popup__answers_clicked'));
-})
+
+// document.querySelector('.answer_1').addEventListener('click' , () => {
+
+//   document.querySelectorAll('.answer__hint').forEach(hint => hint.classList.toggle('answer__hint_on'));
+//   document.querySelectorAll('.popup__answers').forEach(answer => answer.classList.toggle('popup__answers_clicked'));
+// })
 
 
 

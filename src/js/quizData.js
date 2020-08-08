@@ -1,7 +1,7 @@
 export default [
   {
     number: 1,
-    audio: './audio/',
+    audio: './audio/quiz-01-jupiter.mp3',
     puzzle: 'Это звуки из космоса или так звучит земной лес?',
     answers: [
       {
