@@ -2,7 +2,8 @@ export default function audioVizualization(planet, canvasWidth) {
   const canvas = planet.querySelector('.track__canvas');
   const audio = planet.querySelector('.track__audio');
   const button = planet.querySelector('.track__button');
-  const context = new (window.AudioContext || window.webkitAudioContext)()
+  const AudioContext = window.AudioContext || window.webkitAudioContext;
+  const context = new AudioContext();
   const analyser = context.createAnalyser();
   const ctx = canvas.getContext('2d');
   const source = context.createMediaElementSource(audio);

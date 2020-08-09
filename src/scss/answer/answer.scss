@@ -17,6 +17,8 @@
   cursor: pointer;
   transition: all .2s;
   min-height: 54px;
+
+  // border: 1px solid red;
 }
 
 .answer:active {
@@ -34,4 +36,10 @@
 
 .answer_correct {
   border-left: 5px solid #19DF20;
+}
+
+@media screen and (max-width: 732px) {
+  .answer {
+    width: 100%;
+  }
 }

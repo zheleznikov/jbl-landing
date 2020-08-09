@@ -11,5 +11,14 @@
   overflow: scroll;
   overflow-x: hidden;
   width: 600px;
+}
 
+@media screen and (max-width: 732px) {
+  .popup__answers {
+    width: 100%;
+  }
+
+  .popup__answers_clicked {
+    width: 100%;
+  }
 }

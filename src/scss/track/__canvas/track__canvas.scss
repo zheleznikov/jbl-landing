@@ -8,9 +8,15 @@
 
 .track__canvas_popup {
   background: url(./images/popup-seekbar.png);
-  width: 424px;
-  background-position: center;
-  background-repeat: no-repeat;
-  // height: 50px;
-  // border: 1px solid red;
+  width: 500px;
+  background-position: left;
+  background-repeat: repeat-x;
+  height: 50px;
+  // border: 1px solid green;
+}
+
+@media screen and (max-width: 732px) {
+  .track__canvas_popup {
+    width: 80%;
+  }
 }

@@ -7,3 +7,10 @@
   margin: 0 auto 40px;
   // flex-shrink: 0;
 }
+
+
+@media screen and (max-width: 732px) {
+  .popup__foot {
+    width: 90%;
+  }
+}

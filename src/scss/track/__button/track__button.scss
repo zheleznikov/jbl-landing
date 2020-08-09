@@ -14,16 +14,20 @@
   transition: all .5s;
 }
 
+.track__button_popup {
+  margin-right: 0;
+}
+
 .track__button:active {
   transform: scale(0.9);
 }
 
-.track__button:hover {
-  transform: scale(.95);
-  background-color: inherit;
+// .track__button:hover {
+//   transform: scale(.95);
+//   background-color: inherit;
 
-  rect {
-    fill: $emphasized-color;
-  }
-}
+//   rect {
+//     fill: $emphasized-color;
+//   }
+// }
 
