@@ -21,6 +21,7 @@ const openButtonPopup = document.querySelector('.quiz__button');
 const page = document.querySelector('.page');
 
 const quizBlock = document.querySelector('.popup__content');
+const quizBody = document.querySelector('.popup__body');
 const nextButton = document.querySelector('.popup__next');
 
 export {
@@ -42,5 +43,6 @@ export {
   openButtonPopup,
   page,
   quizBlock,
-  nextButton
+  nextButton,
+  quizBody
 }

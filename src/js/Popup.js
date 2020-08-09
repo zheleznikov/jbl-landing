@@ -9,7 +9,8 @@ export default class Popup {
 
   open() {
     this.popup.classList.add("popup_on");
-
+    localStorage.setItem("number", 0);
+    localStorage.setItem("answer", 0);
   }
 
   close() {

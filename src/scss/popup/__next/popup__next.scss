@@ -19,3 +19,7 @@
 .popup__next:active {
   transform: scale(.98);
 }
+
+.popup__next_off {
+  display: none;
+}
