@@ -7,10 +7,13 @@
   // width: 100%;
   margin: 0 auto;
   padding-top: 30px;
-  min-height: 350px;
+  background: #FAFAFA;
+
+  // min-height: 350px;
+  // overflow: auto;
   // border: 1px solid red;
-  overflow: scroll;
-  overflow-x: hidden;
+  // overflow: scroll;
+  // overflow-x: hidden;
   // flex: auto;
 
   //   overflow-y: scroll;
@@ -26,3 +29,9 @@
     width: 90%;
   }
 }
+
+// .popup__body_container {
+//   width: 100%;
+//   background: #FAFAFA;
+
+// }
