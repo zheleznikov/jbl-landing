@@ -32,7 +32,7 @@ import {
 
 new Quiz2(quizBody, quizData[0], nextButton);
 
-window.AudioContext = window.AudioContext || window.webkitAudioContext;
+// window.AudioContext = window.AudioContext || window.webkitAudioContext;
 planetBlocks.forEach((planetBlock) => new PlaySpaceSound(planetBlock));
 cards.forEach((card) => new RotateCard(card));
 linkToHandle.addEventListener("click", removeHash);

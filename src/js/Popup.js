@@ -4,7 +4,9 @@ export default class Popup {
     this.openButton = openButton;
     this.page = page;
     this.closeButton = this.popup.querySelector(".popup__close");
+    this.closeSvgButton = this.popup.querySelector(".popup__svg");
     this.handle();
+    console.log(this.closeSvgButton);
   }
 
   open() {
@@ -30,9 +32,8 @@ export default class Popup {
   }
 
   handle() {
-    // if (this.openButton) {
+    this.closeSvgButton.addEventListener('click', this.close.bind(this));
     this.openButton.addEventListener("click", this.open.bind(this));
-    // }
     this.popup.addEventListener("click", this.superClose.bind(this));
     window.addEventListener("keydown", this.superClose.bind(this));
   }

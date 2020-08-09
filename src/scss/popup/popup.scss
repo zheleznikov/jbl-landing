@@ -10,6 +10,7 @@
 @import './__next/popup__next.scss';
 @import './__foot/popup__foot.scss';
 @import './__main/popup__main.scss';
+@import './__svg/popup__svg.scss';
 .popup {
   position: fixed;
   bottom: 0;
@@ -23,7 +24,7 @@
   z-index: 10;
   overflow: scroll;
   overflow-x: hidden;
-  //  display: none;
+   display: none;
 }
 
 .popup_on {
