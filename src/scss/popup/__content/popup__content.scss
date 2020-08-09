@@ -1,11 +1,10 @@
 .popup__content {
   width: 730px;
-  // border: 1px solid #FAFAFA;
+  // border: 1px solid red;
   // height: 100vh;
   background: #FAFAFA;
   position: relative;
   box-sizing: border-box;
-  // padding: 34px 36px;
   // position: relative;
   // background: #fff url(./images/popup-bg.png);
   background-position: top left;
@@ -13,6 +12,7 @@
   // display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
 }
 
 @media screen and (max-width: 732px) {
