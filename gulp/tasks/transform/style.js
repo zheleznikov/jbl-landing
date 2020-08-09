@@ -4,6 +4,7 @@ const { src, dest } = require('gulp');
 const multipipe = require('multipipe');
 const cssBase64 = require('gulp-css-base64');
 const modifyUrl = require('gulp-modify-css-urls');
+const cleanCss = require('gulp-clean-css')
 
 const isDev = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
 const isProd = process.env.NODE_ENV === 'production';
@@ -36,8 +37,8 @@ module.exports = () =>
       'Safari >= 6',
     ], { cascade: true, flexbox: true }),
     $.remember('style'),
-    $.if(isProd, $.csso()),
-
+    $.if(isProd, $.csso({restructure: false})),
+  
     $.if(isDev, $.sourcemaps.write()),
 
     dest('build')

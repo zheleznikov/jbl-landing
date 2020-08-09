@@ -7,6 +7,7 @@ const isDev = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
 
 const webpackConfig = {
   mode: isDev ? 'development' : 'production',
+  // mode: 'development',
   module: {
     rules: [{
       test: /\.js$/,
