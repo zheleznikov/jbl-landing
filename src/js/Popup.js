@@ -5,20 +5,38 @@ export default class Popup {
     this.page = page;
     this.closeButton = this.popup.querySelector(".popup__close");
     this.closeSvgButton = this.popup.querySelector(".popup__svg");
+    this.audio = this.popup.querySelector('.track__audio');
+    this.quizBody = this.popup.querySelector('.quiz__body');
+    console.log(this.audio);
+
     this.handle();
-    console.log(this.closeSvgButton);
   }
+
+  // stopSound() {
+  //   this.audio.pause();
+  //   console.log(this.audio);
+  //   // this.audio.src = this.audio.src;
+  // }
 
   open() {
     this.popup.classList.add("popup_on");
     localStorage.setItem("number", 0);
     localStorage.setItem("answer", 0);
+    // this.page.classList.add('main_off');
   }
 
   close() {
     this.popup.classList.remove("popup_on", true);
     localStorage.setItem("number", 0);
     localStorage.setItem("answer", 0);
+    this.audio.src = ''
+    this.audio.pause();
+    console.log(this.audio.src)
+    // this.page.classList.remove('main_off');
+
+    // this.stopSound();
+
+    
   }
 
   superClose(event) {

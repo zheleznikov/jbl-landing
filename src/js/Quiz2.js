@@ -13,8 +13,6 @@ export default class Quiz2 {
     this.hint2 = this.quiz.querySelector(".answer__hint_2");
     this.answersBlock = this.quiz.querySelector(".popup__answers");
 
-    console.log(this.quiz.querySelector('.track__button'))
-
     this.handle();
 
   }

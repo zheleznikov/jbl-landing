@@ -18,13 +18,16 @@ import Quiz from "./js/Quiz";
 import Quiz2 from "./js/Quiz2";
 import Result from "./js/Result";
 
+const AudioContext = window.AudioContext || window.webkitAudioContext;
+const audioCtx = new AudioContext();
+
 import {
   planetBlocks,
   cards,
   linkToHandle,
   popup,
   openButtonPopup,
-  page,
+  main,
   quizBlock,
   nextButton,
   quizBody,
@@ -32,16 +35,15 @@ import {
 
 new Quiz2(quizBody, quizData[0], nextButton);
 
-// window.AudioContext = window.AudioContext || window.webkitAudioContext;
-planetBlocks.forEach((planetBlock) => new PlaySpaceSound(planetBlock));
+planetBlocks.forEach((planetBlock) => {
+  new PlaySpaceSound(planetBlock);
+  audioVizualization(planetBlock, 50, audioCtx)
+});
 cards.forEach((card) => new RotateCard(card));
 linkToHandle.addEventListener("click", removeHash);
-
-window.onload = () => planetBlocks.forEach((planetBlock) => audioVizualization(planetBlock, 50));
-
 changeLogoSizeInPopup();
 
-new Popup(popup, openButtonPopup, page);
+new Popup(popup, openButtonPopup, main);
 
 // ВТОРАЯ РЕАЛИЗАЦИЯ, ДЛЯ КЛАССА Quiz2
 
@@ -51,12 +53,13 @@ function firstOpenPopupQuizHandle() {
   quizBody.innerHTML = "";
   new Quiz2(quizBody, quizData[0], nextButton);
   new PlaySpaceSound(popup);
-  audioVizualization(popup, 120);
+  audioVizualization(popup, 120, audioCtx);
 }
 
 function quizHandle() {
   localStorage.setItem("number", +localStorage.getItem("number") + 1);
   let number = localStorage.getItem("number");
+  
   console.log('количество правильных ответов - ',  localStorage.getItem("answer"))
   console.log('пройденные вопросы - ', number)
 
@@ -72,13 +75,11 @@ function quizHandle() {
     nextButton.setAttribute("disabled", "disabled");
     new Quiz2(quizBody, quizData[number], nextButton);
     new PlaySpaceSound(popup);
-    audioVizualization(popup, 120);
+    audioVizualization(popup, 50, audioCtx);
   }
-
 }
 
 openButtonPopup.addEventListener("click",firstOpenPopupQuizHandle);
-
 nextButton.addEventListener("click", quizHandle);
 
 

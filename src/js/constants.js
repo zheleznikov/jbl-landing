@@ -18,7 +18,7 @@ const popup = document.querySelector('.popup');
 const jblLogoPopup = popup.querySelector('.logo_jbl');
 const hypeLogoPopup = popup.querySelector('.logo_hype');
 const openButtonPopup = document.querySelector('.quiz__button');
-const page = document.querySelector('.page');
+const main = document.querySelector('.main');
 
 const quizBlock = document.querySelector('.popup__content');
 const quizBody = document.querySelector('.popup__body');
@@ -41,7 +41,7 @@ export {
   jblLogoPopup,
   hypeLogoPopup,
   openButtonPopup,
-  page,
+  main,
   quizBlock,
   nextButton,
   quizBody
