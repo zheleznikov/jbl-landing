@@ -2,7 +2,6 @@
 import "lazysizes";
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
 import "lazysizes/plugins/unveilhooks/ls.unveilhooks";
-// import Snap from 'snapsvg';
 
 // "custom" functions
 import "./js/parallax";
@@ -15,7 +14,6 @@ import quizData from "./js/quizData";
 import resData from "./js/resData";
 import changeLogoSizeInPopup from "./js/logos";
 import Popup from "./js/Popup";
-import Quiz from "./js/Quiz";
 import Quiz2 from "./js/Quiz2";
 import Result from "./js/Result";
 

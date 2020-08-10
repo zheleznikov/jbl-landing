@@ -6,8 +6,10 @@ export default class Popup {
     this.closeButton = this.popup.querySelector(".popup__close");
     this.closeSvgButton = this.popup.querySelector(".popup__svg");
     this.audio = this.popup.querySelector('.track__audio');
-    this.quizBody = this.popup.querySelector('.quiz__body');
-    console.log(this.audio);
+    this.quizBody = this.popup.querySelector('.popup__body');
+    this.track = this.popup.querySelector('.track');
+    console.log(this.track);
+    // this.body = this.popup.querySelector('')
 
     this.handle();
   }
@@ -29,14 +31,7 @@ export default class Popup {
     this.popup.classList.remove("popup_on", true);
     localStorage.setItem("number", 0);
     localStorage.setItem("answer", 0);
-    this.audio.src = ''
-    this.audio.pause();
-    console.log(this.audio.src)
-    // this.page.classList.remove('main_off');
-
-    // this.stopSound();
-
-    
+    this.quizBody.innerHTML = '';
   }
 
   superClose(event) {
