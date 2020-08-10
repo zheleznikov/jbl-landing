@@ -22,6 +22,7 @@ export default function audioVizualization(planet, canvasWidth, context) {
       let x = i * 2;
       let height = -(array[i] / 75);
       let width = 1.5;
+
       ctx.fillRect(x, canvas.height - 10, width, height)
     }
 
@@ -29,6 +30,7 @@ export default function audioVizualization(planet, canvasWidth, context) {
       let x = i * 2;
       let height = (array[i] / 75);
       let width = 1.5;
+
       ctx.fillRect(x, canvas.height - 10, width, height)
     }
 

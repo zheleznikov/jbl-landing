@@ -14,7 +14,9 @@ const webpackConfig = {
       loader: "babel-loader",
       exclude: /node_modules/
     }]
-  }
+  },
+
+
 }
 
 module.exports = () => src('src/index.js')

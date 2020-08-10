@@ -42,6 +42,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
+    "imports-loader": "^1.1.0",
     "multipipe": "^4.0.0",
     "path": "^0.12.7",
     "vinyl-named": "^1.1.0",

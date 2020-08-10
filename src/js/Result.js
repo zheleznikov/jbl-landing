@@ -9,9 +9,9 @@ export default class Result {
 
   render() {
     this.element.innerHTML = `
-    <p class="answer__title">${this.result} из 10</p>
+    <p class="answer__title answer__title_res">${this.result} из 10</p>
     <h2 class="popup__title">${this.status}</h2>
-    <p class="answer__title">${this.describe}</p>
+    <p class="answer__title answer__title_res">${this.describe}</p>
     `;
   }
 

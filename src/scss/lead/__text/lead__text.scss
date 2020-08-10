@@ -14,3 +14,9 @@
     font-size: 22px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .lead__text {
+    font-size: 18px;
+  }
+}

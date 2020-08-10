@@ -11,7 +11,11 @@
   align-items: center;
   justify-content: center;
   margin-right: 8px;
-  transition: all .5s;
+  transition: all .4s;
+
+  rect {
+    transition: all .4s;
+  }
 }
 
 .track__button_popup {
@@ -22,12 +26,12 @@
   transform: scale(0.9);
 }
 
-// .track__button:hover {
-//   transform: scale(.95);
-//   background-color: inherit;
+.track__button:hover {
+  transform: scale(.95);
+  background-color: #181725;
 
-//   rect {
-//     fill: $emphasized-color;
-//   }
-// }
+  rect {
+    fill: $emphasized-color;
+  }
+}
 
