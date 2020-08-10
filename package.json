@@ -51,7 +51,8 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development gulp dev",
     "build": "cross-env NODE_ENV=production gulp build",
-    "git": "cross-env NODE_ENV=production gh-pages -d build"
+    "git": "cross-env NODE_ENV=production gh-pages -d build",
+    "deploy": "npm run build && scp -r ./build* root@84.38.180.135:/home/jbl/"
   },
   "repository": {
     "type": "git",

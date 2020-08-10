@@ -7,3 +7,10 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+
+@media screen and (max-width: 540px) {
+  .popup__bg {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}

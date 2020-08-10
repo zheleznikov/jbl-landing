@@ -64,7 +64,7 @@ export default class Quiz2 {
     <div class="track track_popup">
       <audio class="track__audio" src="${this.data.audio}"></audio>
       <div class="track__container">
-        <button class="track__button track__button_2">
+        <button class="track__button track__button_popup">
           <svg class="track__svg_play" width="17" height="17" viewBox="0 0 17 17" fill="none" >
             <mask id="mask6" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="2" width="12" height="13">
             <path d="M13.7132 6.95741C14.846 7.63712 14.846 9.27893 13.7132 9.95864L5.89251 14.651C4.72609 15.3509 3.24214 14.5107 3.24214 13.1504L3.24214 3.76564C3.24214 2.40537 4.72609 1.56517 5.89251 2.26502L13.7132 6.95741Z" fill="white"/>
