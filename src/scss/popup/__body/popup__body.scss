@@ -3,7 +3,7 @@
   flex-direction: column;
 
   width: 100%;
-  height: calc(100vh - 200px);
+  height: calc(100vh - 300px);
   margin: 0 auto;
   padding-top: 30px;
   background: #FAFAFA;
@@ -14,14 +14,9 @@
 }
 
 
-
-
-
-
-
-@media screen and (min-height: 625px) {
+@media screen and (min-width: 768px) {
   .popup__body {
-    height: 390px;
+    height: calc(100vh - 220px);
 
   }
 
@@ -29,3 +24,14 @@
     height: 290px;
   }
 }
+
+// @media screen and (min-height: 825px) {
+//   .popup__body {
+//     height: 390px;
+
+//   }
+
+//   .popup__body_res {
+//     height: 290px;
+//   }
+// }
