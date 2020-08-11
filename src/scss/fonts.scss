@@ -4,9 +4,9 @@
     font-weight: 500;
     font-style: normal;
     src: url("./fonts/Montserrat-Medium.eot");
-    src: url("./fonts/Montserrat-Medium.eot?#iefix") format('embedded-opentype'),
-         url("./fonts/Montserrat-Medium.woff2") format("woff2"),
-         url("./fonts/Montserrat-Medium.woff") format("woff");
+    src: url("./fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/Montserrat-Medium.woff2") format("woff2"), url("./fonts/Montserrat-Medium.woff") format("woff");
+    font-display: swap;
 }
 
 /** Montserrat SemiBold **/
@@ -15,11 +15,10 @@
     font-weight: 600;
     font-style: normal;
     src: url("./fonts/Montserrat-SemiBold.eot");
-    src: url("./fonts/Montserrat-SemiBold.eot?#iefix") format('embedded-opentype'),
-         url("./fonts/Montserrat-SemiBold.woff2") format("woff2"),
-         url("./fonts/Montserrat-SemiBold.woff") format("woff");
+    src: url("./fonts/Montserrat-SemiBold.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/Montserrat-SemiBold.woff2") format("woff2"), url("./fonts/Montserrat-SemiBold.woff") format("woff");
+    font-display: swap;
 }
-
 
 /** Montserrat Bold **/
 @font-face {
@@ -27,16 +26,7 @@
     font-weight: 700;
     font-style: normal;
     src: url("./fonts/Montserrat-Bold.eot");
-    src: url("./fonts/Montserrat-Bold.eot?#iefix") format('embedded-opentype'),
-         url("./fonts/Montserrat-Bold.woff2") format("woff2"),
-         url("./fonts/Montserrat-Bold.woff") format("woff");
+    src: url("./fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/Montserrat-Bold.woff2") format("woff2"), url("./fonts/Montserrat-Bold.woff") format("woff");
+    font-display: swap;
 }
-
-
-
-
-
-
-
-
-

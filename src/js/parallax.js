@@ -1,7 +1,6 @@
 import simpleParallax from 'simple-parallax-js';
 
 import {
-  parallaxImgs,
   marsInHeaderImg,
   smallJupiterImg,
   whiteHeadsetsImg,
@@ -24,7 +23,6 @@ const defaultDelay = {
   delay: 1.2,
 }
 
-// new simpleParallax(parallaxImgs, {...defaultDelay, ...parallaxConfig});
 new simpleParallax(marsInHeaderImg, { delay: 0.5, ...parallaxConfig});
 new simpleParallax(smallJupiterImg, { ...defaultDelay, ...parallaxConfig });
 new simpleParallax(whiteHeadsetsImg, { delay: 1.0, ...parallaxConfig });

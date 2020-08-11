@@ -43,7 +43,7 @@ export default function audioVizualization(planet, canvasWidth, context) {
 
   button.addEventListener('click', function() {
     context.resume().then(() => {
-      console.log('Playback resumed successfully');
+      // console.log('Playback resumed successfully');
     });
   });
 

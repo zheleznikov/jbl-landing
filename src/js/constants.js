@@ -3,7 +3,7 @@ const cards = document.querySelectorAll('.card');
 const linkToHandle = document.querySelector('.social__link_down');
 
 // images to parallax
-const parallaxImgs = document.querySelectorAll('.parallax');
+// const parallaxImgs = document.querySelectorAll('.parallax');
 const marsInHeaderImg = document.querySelector('.header__planet_1');
 const smallJupiterImg = document.querySelector('.social__planet');
 const whiteHeadsetsImg = document.querySelector('.lead__img-container');
@@ -20,7 +20,6 @@ const hypeLogoPopup = popup.querySelector('.logo_hype');
 const openButtonPopup = document.querySelector('.quiz__button');
 const main = document.querySelector('.main');
 
-const quizBlock = document.querySelector('.popup__content');
 const quizBody = document.querySelector('.popup__body');
 const nextButton = document.querySelector('.popup__next');
 
@@ -28,7 +27,7 @@ export {
   planetBlocks,
   cards,
   linkToHandle,
-  parallaxImgs,
+  // parallaxImgs,
   marsInHeaderImg,
   smallJupiterImg,
   whiteHeadsetsImg,
@@ -42,7 +41,6 @@ export {
   hypeLogoPopup,
   openButtonPopup,
   main,
-  quizBlock,
   nextButton,
   quizBody
 }

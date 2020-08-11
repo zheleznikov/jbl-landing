@@ -1,7 +1,7 @@
 export default [
   {
     number: 1,
-    audio: './audio/quiz-01-jupiter.mp3',
+    audio: './audio/quiz-01-jupiter.webm',
     puzzle: 'Это звуки из космоса или так звучит земной лес?',
     answers: [
       {
@@ -22,7 +22,7 @@ export default [
 
   {
     number: 2,
-    audio: './audio/quiz-02-moon.mp3',
+    audio: './audio/quiz-02-moon.webm',
     puzzle: 'Это техно-трек или что-то неземное?',
     answers: [
       {
@@ -44,7 +44,7 @@ export default [
 
   {
     number: 3,
-    audio: './audio/quiz-03-whistler.mp3',
+    audio: './audio/quiz-03-whistler.webm',
     puzzle: 'Это звуки сражения между пришельцами и землянами или что-то космическое?',
     answers: [
       {
@@ -62,7 +62,7 @@ export default [
 
   {
     number: 4,
-    audio: './audio/quiz-04-earth.mp3',
+    audio: './audio/quiz-04-earth.webm',
     puzzle: 'Как думаете, это саундтрек к какой-то «Космической одиссее» или звук, полученный за пределами нашей планеты?',
     answers: [
       {
@@ -80,7 +80,7 @@ export default [
 
   {
     number: 5,
-    audio: './audio/quiz-05-comet69.mp3',
+    audio: './audio/quiz-05-comet69.webm',
     puzzle: 'Это звук летящей кометы или метель?',
     answers: [
       {
@@ -98,7 +98,7 @@ export default [
 
   {
     number: 6,
-    audio: './audio/quiz-06-plane.mp3',
+    audio: './audio/quiz-06-plane.webm',
     puzzle: 'Это гул самолета или так «звучат» кольца Сатурна?',
     answers: [
       {
@@ -116,7 +116,7 @@ export default [
 
   {
     number: 7,
-    audio: './audio/quiz-07-sun.mp3',
+    audio: './audio/quiz-07-sun.webm',
     puzzle: 'Это из космоса или из хоррор-сериала?',
     answers: [
       {
@@ -134,7 +134,7 @@ export default [
 
   {
     number: 8,
-    audio: './audio/quiz-08-highway.mp3',
+    audio: './audio/quiz-08-highway.webm',
     puzzle: 'Это шум еще одной планеты или запись, сделанная возле трассы?',
     answers: [
       {
@@ -152,7 +152,7 @@ export default [
 
   {
     number: 9,
-    audio: './audio/quiz-09-wailing.mp3',
+    audio: './audio/quiz-09-wailing.webm',
     puzzle: 'Это нота на синтезаторе или что-то, услышанное за пределами нашей планеты?',
     answers: [
       {
@@ -170,7 +170,7 @@ export default [
 
   {
     number: 10,
-    audio: './audio/quiz-10-saturn.mp3',
+    audio: './audio/quiz-10-saturn.webm',
     puzzle: 'Последний вопрос! Это разговор пришельцев из фильма или радиочастоты, полученные с планеты Сатурн?',
     answers: [
       {

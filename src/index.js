@@ -27,7 +27,6 @@ import {
   popup,
   openButtonPopup,
   main,
-  quizBlock,
   nextButton,
   quizBody,
 } from "./js/constants";
@@ -36,7 +35,7 @@ new Quiz2(quizBody, quizData[0], nextButton);
 
 planetBlocks.forEach((planetBlock) => {
   new PlaySpaceSound(planetBlock);
-  audioVizualization(planetBlock, 50, audioCtx)
+  audioVizualization(planetBlock, 50, audioCtx);
 });
 cards.forEach((card) => new RotateCard(card));
 linkToHandle.addEventListener("click", removeHash);
@@ -44,7 +43,6 @@ changeLogoSizeInPopup();
 
 new Popup(popup, openButtonPopup, main);
 
-// ВТОРАЯ РЕАЛИЗАЦИЯ, ДЛЯ КЛАССА Quiz2
 
 function firstOpenPopupQuizHandle() {
   nextButton.classList.remove("popup__next_off");
@@ -85,32 +83,6 @@ function quizHandle() {
 openButtonPopup.addEventListener("click",firstOpenPopupQuizHandle);
 nextButton.addEventListener("click", quizHandle);
 
-
-
-// ПЕРВАЯ РЕАЛИЗАЦИЯ ДЛЯ КЛАССА Quiz
-
-// openButtonPopup.addEventListener("click", () => {
-//   localStorage.setItem("number", 0);
-//   localStorage.setItem("answer", 0);
-//   nextButton.textContent = 'Следующий вопрос';
-//   new Quiz(quizBlock, quizData[0]);
-// });
-
-// nextButton.addEventListener("click", () => {
-//   localStorage.setItem("number", +localStorage.getItem("number") + 1);
-//   console.log('колво правильных ответов - ',  localStorage.getItem("answer"))
-//   let number = localStorage.getItem("number");
-//   if (number > 8) {
-//     nextButton.textContent = 'Узнать результаты';
-//   }
-
-//   if (number > 9) {
-//     console.log("finish");
-//   } else {
-//     new Quiz(quizBlock, quizData[number]);
-//   }
-
-// });
 
 
 
