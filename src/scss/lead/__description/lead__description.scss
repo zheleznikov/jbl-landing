@@ -1,13 +1,11 @@
 .lead__description {
   align-self: center;
   margin-left: 40px;
-  // border: 1px solid red;
 }
 
 @media screen and (max-width: 950px) {
   .lead__description {
     margin-left: 0;
-    align-self: center;
     margin-top: 20px;
   }
 }
