@@ -1,13 +1,13 @@
 .track__canvas {
   width: 120px;
-  background: url(./images/Seekbarfull.webp);
+  background: url(./images/Seekbarfull.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 
 .track__canvas_popup {
-  background: url(./images/popup-seekbar.webp);
+  // background: url(./images/popup-seekbar.webp);
   width: 500px;
   background-position: left;
   background-repeat: repeat-x;
