@@ -2,19 +2,16 @@
   height: 147px;
   width: 100%;
   background: linear-gradient(180deg, #09081B 0.28%, rgba(9, 8, 27, 0) 88.65%);
-  // border: 1px solid red;
   z-index: -4;
 }
 
-.lead__layer_1  {
-  display: none;
-}
+
 
 .lead__layer_stars {
   width: 384px;
   height: 440px;
   position: absolute;
-  background: url(./images/lead-bg-stars.webp);
+  background: url(./images/lead-bg-stars.png);
   bottom: -400px;
   left: 55%;
   z-index: 4;
@@ -22,10 +19,6 @@
   opacity: .5;
 }
 
-// .lead__layer_stars:hover {
-//   opacity: 1;
-//   transform: scale(1.2);
-// }
 
 @media screen and (max-width: 950px) {
   .lead__layer {
@@ -50,7 +43,6 @@
     bottom: 0;
     left: 0;
     z-index: 4;
-    // opacity: .9;
   }
 
 
