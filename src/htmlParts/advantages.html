@@ -1,15 +1,26 @@
 <section class="advantages">
-  <img data-src="./images/stars-bg.webp" alt="" class="advantages__bg lazyload stars">
+  <picture>
+    <source data-srcset="./images/stars-bg.webp" type="image/webp">
+    <source data-srcset="./images/stars-bg.png" type="image/png">
+    <img data-srcset="./images/stars-bg.webp" alt="" class="advantages__bg lazyload stars">
+
+  </picture>
   <div class="advantages__container">
 
-    <img src="./images/ear-right.webp" alt="" class="advantages__img advantages__img_right">
-    <img src="./images/ear-left.webp" alt="" class="advantages__img advantages__img_left">
+    <picture>
+      <source data-srcset="./images/ear-right.webp" type="image/webp">
+      <source data-srcset="./images/ear-right.png" type="image/png">
+      <img data-srcset="./images/ear-right.webp" alt="" class="advantages__img advantages__img_right lazyload">
+    </picture>
 
-    @@include('./cards/card-main.html')
-    @@include('./cards/card-second.html')
-    @@include('./cards/card-third.html')
-    @@include('./cards/card-fourth.html')
-    @@include('./cards/card-fifth.html')
+    <picture>
+      <source data-srcset="./images/ear-left.webp" type="image/webp">
+      <source data-srcset="./images/ear-left.png" type="image/png">
+      <img data-srcset="./images/ear-left.webp" alt="" class="advantages__img advantages__img_left lazyload">
+
+    </picture>
+
+    @@include('./cards/card-main.html') @@include('./cards/card-second.html') @@include('./cards/card-third.html') @@include('./cards/card-fourth.html') @@include('./cards/card-fifth.html')
 
   </div>
-</section> 
+</section>

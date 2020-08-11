@@ -2,14 +2,21 @@
   <div class="ganymede__block">
     <picture>
 
-      <source data-srcset="./images/ganymede-768.webp" media="(max-width: 768px)">
-      <source data-srcset="./images/ganymede.webp">
+      <source data-srcset="./images/ganymede-768.webp" media="(max-width: 768px)" type="image/webp">
+      <source data-srcset="./images/ganymede.webp" type="image/webp">
+      <source data-srcset="./images/ganymede-768.png" media="(max-width: 768px)" type="image/png">
+      <source data-srcset="./images/ganymede.png" type="image/png">
       <img data-srcset="./images/ganymede.webp" alt="" class="ganymede__img lazyload parallax">
     </picture>
 
 
+    <picture>
+      <source srcset="./images/planets-smooth-bg3.webp" media="(max-width: 768px)" type="image/webp">
+      <source srcset="./images/planets-smooth-bg3.jpg">
+      <img srcset="./images/planets-smooth-bg3.webp" alt="" class="ganymede__bg">
 
-    <img src="./images/planets-smooth-bg3.webp" alt="" class="ganymede__bg">
+    </picture>
+
     <div class="ganymede__layer_stars"></div>
 
 
