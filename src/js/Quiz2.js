@@ -22,7 +22,7 @@ export default class Quiz2 {
       button1.classList.add("answer_correct");
       button1.querySelector(".answer__icon").classList.add("answer__icon_correct");
       button1.querySelector(".answer__hint").classList.add("answer__hint_on");
-      localStorage.setItem('answer', + localStorage.getItem('answer') + 1);
+      sessionStorage.setItem('answer', + sessionStorage.getItem('answer') + 1);
     } else {
       this.hint1.classList.add("answer__hint_on");
       this.hint2.classList.add("answer__hint_on");

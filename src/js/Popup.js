@@ -17,14 +17,11 @@ export default class Popup {
 
   open() {
     this.popup.classList.add("popup_on");
-    localStorage.setItem("number", 0);
-    localStorage.setItem("answer", 0);
+
   }
 
   close() {
     this.popup.classList.remove("popup_on", true);
-    localStorage.setItem("number", 0);
-    localStorage.setItem("answer", 0);
     this.quizBody.innerHTML = '';
   }
 

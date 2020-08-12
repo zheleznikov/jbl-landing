@@ -7,6 +7,8 @@
 @import './__head/result__head.scss';
 @import './__content/result__content.scss';
 @import './__foot/result__foot.scss';
+@import './__again/result__again.scss';
+@import './__close/result__close.scss';
 
 .result {
   width: 730px;
@@ -17,10 +19,17 @@
   z-index: 2;
   border-radius: 10px;
   // background: url(./images/res-senior.jpg);
-  border: 1px solid #fafafa;
+  // border: 1px solid #fafafa;
   box-sizing: border-box;
 }
 
 .result_off {
   display: none;
+}
+
+@media screen and (max-width: 732px) {
+  .result {
+    width: 100%;
+    border-radius: 0;
+  }
 }

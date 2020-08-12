@@ -22,6 +22,7 @@ const main = document.querySelector('.main');
 
 const quizBody = document.querySelector('.popup__body');
 const nextButton = document.querySelector('.popup__next');
+const againButton = document.querySelector('.result__again')
 
 export {
   planetBlocks,
@@ -42,5 +43,6 @@ export {
   openButtonPopup,
   main,
   nextButton,
-  quizBody
+  quizBody,
+  againButton
 }

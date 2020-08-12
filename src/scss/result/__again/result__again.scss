@@ -1,0 +1,30 @@
+
+  .result__again {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06), 0px 10px 16px rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    display: block;
+    width: 250px;
+    height: 54px;
+    font-family: Montserrat, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  .result__again:active {
+    transform: scale(.98);
+  }
+  
+
+
+  @media screen and (max-width: 480px) {
+    .result__again {
+      margin-bottom: 16px;
+    }
+  }

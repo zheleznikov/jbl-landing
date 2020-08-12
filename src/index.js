@@ -29,9 +29,14 @@ import {
   main,
   nextButton,
   quizBody,
+  againButton
 } from "./js/constants";
 
 new Quiz2(quizBody, quizData[0], nextButton);
+
+// new Result(popup, resData);
+// document.querySelector('.popup__content').classList.add('popup__content_off');
+// document.querySelector('.result').classList.remove('result_off');
 
 planetBlocks.forEach((planetBlock) => {
   new PlaySpaceSound(planetBlock);
@@ -49,8 +54,8 @@ function firstOpenPopupQuizHandle() {
   nextButton.textContent = "Следующий вопрос";
   document.querySelector('.popup__content').classList.remove('popup__content_off');
   document.querySelector('.result').classList.add('result_off');
-  // new Result(quizBody, resData);
-  // quizBody.classList.remove('popup__body_res');
+  sessionStorage.setItem("number", 0);
+  sessionStorage.setItem("answer", 0);
 
   quizBody.innerHTML = "";
   new Quiz2(quizBody, quizData[0], nextButton);
@@ -59,10 +64,10 @@ function firstOpenPopupQuizHandle() {
 }
 
 function quizHandle() {
-  localStorage.setItem("number", +localStorage.getItem("number") + 1);
-  let number = localStorage.getItem("number");
+  sessionStorage.setItem("number", +sessionStorage.getItem("number") + 1);
+  let number = sessionStorage.getItem("number");
   
-  console.log('количество правильных ответов - ',  localStorage.getItem("answer"))
+  console.log('количество правильных ответов - ',  sessionStorage.getItem("answer"))
   console.log('пройденные вопросы - ', number)
 
   if (number > 8) {
@@ -87,6 +92,7 @@ function quizHandle() {
 }
 
 openButtonPopup.addEventListener("click",firstOpenPopupQuizHandle);
+againButton.addEventListener("click",firstOpenPopupQuizHandle);
 nextButton.addEventListener("click", quizHandle);
 
 
