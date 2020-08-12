@@ -4,7 +4,8 @@ const { src, dest } = require('gulp');
 const multipipe = require('multipipe');
 const cssBase64 = require('gulp-css-base64');
 const modifyUrl = require('gulp-modify-css-urls');
-const cleanCss = require('gulp-clean-css')
+const cleanCss = require('gulp-clean-css');
+var gcmq = require('gulp-group-css-media-queries');
 
 const isDev = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
 const isProd = process.env.NODE_ENV === 'production';
@@ -26,6 +27,8 @@ module.exports = () =>
     //   // baseDir: 'build',
     //   // maxSize: 14 * 1024 // calculation in bytes
     // })),
+    $.if(isProd, gcmq()),
+    // gcmq(),
     $.autoprefixer([
       'Android 2.3',
       'Android >= 4',

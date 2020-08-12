@@ -3,7 +3,6 @@ const cards = document.querySelectorAll('.card');
 const linkToHandle = document.querySelector('.social__link_down');
 
 // images to parallax
-// const parallaxImgs = document.querySelectorAll('.parallax');
 const marsInHeaderImg = document.querySelector('.header__planet_1');
 const smallJupiterImg = document.querySelector('.social__planet');
 const whiteHeadsetsImg = document.querySelector('.lead__img-container');
@@ -31,7 +30,6 @@ export {
   planetBlocks,
   cards,
   linkToHandle,
-  // parallaxImgs,
   marsInHeaderImg,
   smallJupiterImg,
   whiteHeadsetsImg,

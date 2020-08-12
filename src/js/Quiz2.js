@@ -14,7 +14,6 @@ export default class Quiz2 {
     this.answersBlock = this.quiz.querySelector(".popup__answers");
 
 
-    // this.changeLogoSizeInPopup();
     this.handle();
 
 
@@ -60,10 +59,7 @@ export default class Quiz2 {
     this.answer2.setAttribute("disabled", "disabled");
   }
 
-  changeLogoSizeInPopup() {
-    this.jblLogoPopup.classList.add('logo_jbl_popup');
-    this.hypeLogoPopup.classList.add('logo_hype_popup');
-  }
+
 
 
   render() {

@@ -42,7 +42,6 @@ export default class PlaySpaceSound {
 
   handle() {
     if (this.stopButtons) {
-      // console.log(this.stopButtons)
       this.stopButtons.forEach((button) =>
         button.addEventListener("click", this.stopSound.bind(this))
       );
