@@ -29,14 +29,13 @@ import {
   main,
   nextButton,
   quizBody,
-  againButton
+  againButton,
+  popupContent,
+  popupResult
 } from "./js/constants";
 
 new Quiz2(quizBody, quizData[0], nextButton);
 
-// new Result(popup, resData);
-// document.querySelector('.popup__content').classList.add('popup__content_off');
-// document.querySelector('.result').classList.remove('result_off');
 
 planetBlocks.forEach((planetBlock) => {
   new PlaySpaceSound(planetBlock);
@@ -44,6 +43,7 @@ planetBlocks.forEach((planetBlock) => {
 });
 cards.forEach((card) => new RotateCard(card));
 linkToHandle.addEventListener("click", removeHash);
+
 changeLogoSizeInPopup();
 
 new Popup(popup, openButtonPopup, main);
@@ -52,8 +52,9 @@ new Popup(popup, openButtonPopup, main);
 function firstOpenPopupQuizHandle() {
   nextButton.classList.remove("popup__next_off");
   nextButton.textContent = "Следующий вопрос";
-  document.querySelector('.popup__content').classList.remove('popup__content_off');
-  document.querySelector('.result').classList.add('result_off');
+  popupContent.classList.remove('popup__content_off');
+  popupResult.classList.add('result_off');
+
   sessionStorage.setItem("number", 0);
   sessionStorage.setItem("answer", 0);
 
@@ -76,12 +77,10 @@ function quizHandle() {
 
   if (number > 9) {
     quizBody.innerHTML = "";
-    document.querySelector('.popup__content').classList.add('popup__content_off');
-    document.querySelector('.result').classList.remove('result_off');
+    popupContent.classList.add('popup__content_off');
+    popupResult.classList.remove('result_off');
     new Result(popup, resData);
 
-    // quizBody.classList.add('popup__body_res');
-    // nextButton.classList.add("popup__next_off");
   } else {
     quizBody.innerHTML = "";
     nextButton.setAttribute("disabled", "disabled");

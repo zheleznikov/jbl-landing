@@ -13,9 +13,15 @@ export default class Quiz2 {
     this.hint2 = this.quiz.querySelector(".answer__hint_2");
     this.answersBlock = this.quiz.querySelector(".popup__answers");
 
+
+    // this.changeLogoSizeInPopup();
     this.handle();
 
+
+
   }
+
+
 
   showHint(n, button1, button2) {
     if (this.data.answers[n].isCorrect === true) {
@@ -52,6 +58,11 @@ export default class Quiz2 {
   disableChooseButtons() {
     this.answer1.setAttribute("disabled", "disabled");
     this.answer2.setAttribute("disabled", "disabled");
+  }
+
+  changeLogoSizeInPopup() {
+    this.jblLogoPopup.classList.add('logo_jbl_popup');
+    this.hypeLogoPopup.classList.add('logo_hype_popup');
   }
 
 

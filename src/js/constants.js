@@ -15,14 +15,17 @@ const cometImg = document.querySelector('.comet__img');
 
 // about popup
 const popup = document.querySelector('.popup');
-const jblLogoPopup = popup.querySelector('.logo_jbl');
-const hypeLogoPopup = popup.querySelector('.logo_hype');
+const jblLogoPopup = popup.querySelectorAll('.logo_jbl');
+const hypeLogoPopup = popup.querySelectorAll('.logo_hype');
 const openButtonPopup = document.querySelector('.quiz__button');
 const main = document.querySelector('.main');
 
 const quizBody = document.querySelector('.popup__body');
 const nextButton = document.querySelector('.popup__next');
-const againButton = document.querySelector('.result__again')
+const againButton = document.querySelector('.result__again');
+
+const popupContent = document.querySelector('.popup__content');
+const popupResult = document.querySelector('.result');
 
 export {
   planetBlocks,
@@ -44,5 +47,7 @@ export {
   main,
   nextButton,
   quizBody,
-  againButton
+  againButton,
+  popupContent,
+  popupResult
 }
