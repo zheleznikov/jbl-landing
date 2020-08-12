@@ -4,13 +4,20 @@
   position: relative;
   box-sizing: border-box;
   border-radius: 10px;
+  // z-index: -1;
+  // border: 1px solid red;
+  // display: none;
+}
 
-
+.popup__content_off {
+  display: none;
 }
 
 @media screen and (max-width: 732px) {
   .popup__content {
     width: 100%;
+    border-radius: 0;
+
   }
 }
 

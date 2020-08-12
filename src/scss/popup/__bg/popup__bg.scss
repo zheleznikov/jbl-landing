@@ -2,13 +2,15 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 110px;
+  // width: 100%;
+  // height: 110px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  // border: 1px solid red;
+  // z-index: -1;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 732px) {
   .popup__bg {
     border-top-left-radius: 0;
     border-top-right-radius: 0;

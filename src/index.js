@@ -47,8 +47,10 @@ new Popup(popup, openButtonPopup, main);
 function firstOpenPopupQuizHandle() {
   nextButton.classList.remove("popup__next_off");
   nextButton.textContent = "Следующий вопрос";
-  new Result(quizBody, resData);
-  quizBody.classList.remove('popup__body_res');
+  document.querySelector('.popup__content').classList.remove('popup__content_off');
+  document.querySelector('.result').classList.add('result_off');
+  // new Result(quizBody, resData);
+  // quizBody.classList.remove('popup__body_res');
 
   quizBody.innerHTML = "";
   new Quiz2(quizBody, quizData[0], nextButton);
@@ -68,9 +70,13 @@ function quizHandle() {
   }
 
   if (number > 9) {
-    new Result(quizBody, resData);
-    quizBody.classList.add('popup__body_res');
-    nextButton.classList.add("popup__next_off");
+    quizBody.innerHTML = "";
+    document.querySelector('.popup__content').classList.add('popup__content_off');
+    document.querySelector('.result').classList.remove('result_off');
+    new Result(popup, resData);
+
+    // quizBody.classList.add('popup__body_res');
+    // nextButton.classList.add("popup__next_off");
   } else {
     quizBody.innerHTML = "";
     nextButton.setAttribute("disabled", "disabled");

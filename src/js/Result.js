@@ -3,31 +3,47 @@ export default class Result {
     this.element = element;
     this.data = data;
     this.result = localStorage.getItem("answer");
+    this.number = this.element.querySelector('.result__number');
+    this.status = this.element.querySelector('.result__status');
+    this.text = this.element.querySelector('.result__text');
+    this.bg = this.element.querySelector('.result__bg');
+
     this.checkCorrectAnswers();
-    this.render();
   }
 
-  render() {
-    this.element.innerHTML = `
-    <p class="answer__title answer__title_res">${this.result} из 10</p>
-    <h2 class="popup__title">${this.status}</h2>
-    <p class="answer__title answer__title_res">${this.describe}</p>
-    `;
-  }
+
 
   checkCorrectAnswers() {
     if (this.result > 7) {
-      this.status = this.data[0].status;
-      this.describe = this.data[0].describe;
+      this.setSenior()
     } else if (
       this.result < 8 &&
       this.result > 4
     ) {
-      this.status = this.data[1].status;
-      this.describe = this.data[1].describe;
+      this.setMiddle();
     } else {
-      this.status = this.data[2].status;
-      this.describe = this.data[2].describe;
+      this.setJunior();
     }
+  }
+
+  setJunior() {
+    this.number.textContent = this.result;
+    this.status.textContent = this.data[2].status;
+    this.text.textContent = this.data[2].describe;
+    this.bg.classList.add('result__bg_junior');
+  }
+
+  setMiddle() {
+    this.number.textContent = this.result;
+    this.status.textContent = this.data[1].status;
+    this.text.textContent = this.data[1].describe;
+    this.bg.classList.add('result__bg_middle');
+  }
+
+  setSenior() {
+    this.number.textContent = this.result;
+    this.status.textContent = this.data[0].status;
+    this.text.textContent = this.data[0].describe;
+    this.bg.classList.add('result__bg_senior');
   }
 }
