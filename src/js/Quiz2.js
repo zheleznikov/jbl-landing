@@ -13,10 +13,7 @@ export default class Quiz2 {
     this.hint2 = this.quiz.querySelector(".answer__hint_2");
     this.answersBlock = this.quiz.querySelector(".popup__answers");
 
-
     this.handle();
-
-
 
   }
 
@@ -29,9 +26,10 @@ export default class Quiz2 {
       button1.querySelector(".answer__hint").classList.add("answer__hint_on");
       sessionStorage.setItem('answer', + sessionStorage.getItem('answer') + 1);
     } else {
-      this.hint1.classList.add("answer__hint_on");
-      this.hint2.classList.add("answer__hint_on");
+      // this.hint1.classList.add("answer__hint_on");
+      // this.hint2.classList.add("answer__hint_on");
       button1.classList.add("answer_wrong");
+      button1.querySelector(".answer__hint").classList.add("answer__hint_on");
       button2.classList.add("answer_correct");
       button1.querySelector(".answer__icon").classList.add("answer__icon_wrong");
     }
