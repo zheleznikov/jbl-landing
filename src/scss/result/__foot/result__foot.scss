@@ -19,5 +19,6 @@
 @media screen and (max-width: 480px) {
   .result__foot_container {
     flex-direction: column-reverse;
+    justify-content: center;
   }
 }
