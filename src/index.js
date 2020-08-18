@@ -97,8 +97,8 @@ againButton.addEventListener("click",firstOpenPopupQuizHandle);
 nextButton.addEventListener("click", quizHandle);
 
 // testing
-popupContent.classList.add('popup__content_off');
-popupResult.classList.remove('result_off');
-document.querySelector('.popup').classList.add('popup_on')
+// popupContent.classList.add('popup__content_off');
+// popupResult.classList.remove('result_off');
+// document.querySelector('.popup').classList.add('popup_on')
 
 

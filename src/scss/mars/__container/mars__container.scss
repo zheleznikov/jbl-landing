@@ -5,5 +5,14 @@
 @media screen and (max-width: 950px) {
   .mars__container {
     flex-direction: column;
+    margin-bottom: 180px;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+  .mars__container {
+    flex-direction: column;
+    margin-bottom: 100px;
   }
 }
