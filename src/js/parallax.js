@@ -9,6 +9,7 @@ import {
   marsImg,
   ganymedeImg,
   cometImg,
+  earUnderMars
 }
 from './constants';
 
@@ -31,3 +32,4 @@ new simpleParallax(saturnImg, { ...defaultDelay, ...parallaxConfig });
 new simpleParallax(marsImg, { ...defaultDelay, ...parallaxConfig });
 new simpleParallax(ganymedeImg, { ...defaultDelay, ...parallaxConfig });
 new simpleParallax(cometImg, { delay: 0.5, ...parallaxConfig });
+new simpleParallax(earUnderMars, { ...defaultDelay, ...parallaxConfig });

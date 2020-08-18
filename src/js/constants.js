@@ -11,6 +11,7 @@ const saturnImg = document.querySelector('.saturn__img');
 const marsImg = document.querySelector('.mars__img');
 const ganymedeImg = document.querySelector('.ganymede__img');
 const cometImg = document.querySelector('.comet__img');
+const earUnderMars = document.querySelectorAll('.mars__img_ear');
 
 // about popup
 const popup = document.querySelector('.popup');
@@ -47,5 +48,6 @@ export {
   quizBody,
   againButton,
   popupContent,
-  popupResult
+  popupResult,
+  earUnderMars
 }
