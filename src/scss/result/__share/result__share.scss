@@ -1,0 +1,20 @@
+.result__share {
+  // align-self: flex-start;
+  // border: 1px solid red;
+}
+
+.result__share_text {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 15px;
+  color: #333333;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .result__share_text {
+    display: none;
+  }
+}
