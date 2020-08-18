@@ -97,30 +97,20 @@ openButtonPopup.addEventListener("click", firstOpenPopupQuizHandle);
 againButton.addEventListener("click", firstOpenPopupQuizHandle);
 nextButton.addEventListener("click", quizHandle);
 
-// testing
 
 
 
 
-const ogImage = document.querySelector('meta[property="og:image"]');
-const twitterImage = document.querySelector('meta[name="twitter:image"]');
-const vkImage = document.querySelector('meta[name="vk:image"]');
-
-const yaShare = document.querySelector('.ya-share2');
-
-yaShare.setAttribute('data-image', './images/res00.png');
-yaShare.setAttribute('data-image:vkontakte', './images/res00.png');
-yaShare.setAttribute('data-image:facebook', './images/res00.png');
-yaShare.setAttribute('data-image:whatsapp', './images/res00.png');
-yaShare.setAttribute('data-image:telegram', './images/res00.png');
 
 function setYaShare(link) {
-  yaShare.setAttribute('data-image', link);
-  yaShare.setAttribute('data-image:vkontakte', link);
-  yaShare.setAttribute('data-image:facebook', link);
-  yaShare.setAttribute('data-image:whatsapp', link);
-  yaShare.setAttribute('data-image:telegram', link);
-  console.log(yaShare);
+  Ya.share2('share', {
+    content: {
+      url: 'https://jbl.hype.tech/?utm_source=hype_landing_jbl',
+      title: 'Космический тест от JBL ',
+      description: 'Попробуйте угадать, что вы слышите — звук с Земли или из космоса 🤔',
+      image: link
+    }
+  });
 }
 
 
@@ -128,87 +118,10 @@ const socialMetaArr = [ogImage, twitterImage, vkImage];
 
 
 function shareImageHandle() {
-  console.log('handleShare start');
   const result = +sessionStorage.getItem("answer");
+  const number = result.toString().padStart(2, "0");
 
-  switch (result) {
-    case 0:
-      socialMetaArr.forEach(tag => tag.content = './images/res00.png');
-      setYaShare('./images/res00.png')
-      socialMetaArr.forEach(tag => console.log(tag));
-
-      break;
-    case 1:
-      socialMetaArr.forEach(tag => tag.content = './images/res01.png');
-      setYaShare('./images/res01.png')
-      socialMetaArr.forEach(tag => console.log(tag));
-      break;
-
-    case 2:
-
-      setYaShare('./images/res02.png')
-
-      socialMetaArr.forEach(tag => tag.content = './images/res02.png');
-      socialMetaArr.forEach(tag => console.log(tag));
-
-      break;
-    case 3:
-      setYaShare('./images/res03.png')
-
-      socialMetaArr.forEach(tag => tag.content = './images/res03.png');
-      socialMetaArr.forEach(tag => console.log(tag.content));
-
-      break;
-    case 4:
-      setYaShare('./images/res04.png')
-
-      socialMetaArr.forEach(tag => tag.content = './images/res04.png');
-      socialMetaArr.forEach(tag => console.log(tag));
-
-      break;
-    case 5:
-      setYaShare('./images/res05.png')
-
-      socialMetaArr.forEach(tag => tag.content = './images/res05.png');
-      socialMetaArr.forEach(tag => console.log(tag));
-
-      break;
-    case 6:
-      setYaShare('./images/res06.png')
-
-      socialMetaArr.forEach(tag => tag.content = './images/res06.png');
-      socialMetaArr.forEach(tag => console.log(tag));
-
-      break;
-    case 7:
-      setYaShare('./images/res07.png')
-
-      socialMetaArr.forEach(tag => tag.content = './images/res07.png');
-      socialMetaArr.forEach(tag => console.log(tag));
-
-      break;
-    case 8:
-      setYaShare('./images/res08.png')
-
-      socialMetaArr.forEach(tag => tag.content = './images/res08.png');
-      socialMetaArr.forEach(tag => console.log(tag));
-
-      break;
-    case 9:
-      setYaShare('./images/res09.png')
-
-      socialMetaArr.forEach(tag => tag.content = './images/res09.png');
-      socialMetaArr.forEach(tag => console.log(tag));
-
-      break;
-    case 10:
-      setYaShare('./images/res10.png')
-
-      socialMetaArr.forEach(tag => tag.content = './images/res10.png');
-      socialMetaArr.forEach(tag => console.log(tag));
-
-      break;
-
-  }
+  const link = 'https://jbl.hype.tech/images/res' + number + '.png'
+  setYaShare(link)
 
 }
